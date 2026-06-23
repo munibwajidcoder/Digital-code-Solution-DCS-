@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="footer-container">
           <div className="footer-top">
             {/* Brand */}
-            <div className="footer-brand">
+            <div className="footer-brand anim-footer-lift delay-100">
               <a href="#" className="footer-logo">
                 <img src="/images/logo.png" alt="DCS Logo" style={{ width: '44px', height: 'auto', filter: 'drop-shadow(0 0 8px rgba(122,34,255,0.5))' }} />
                 <div>
@@ -34,17 +34,18 @@ export default function Footer() {
             </div>
 
             {/* Links */}
-            <div className="footer-links-group">
+            <div className="footer-links-group anim-footer-lift delay-200">
               <span className="footer-links-title">Services</span>
               <ul className="footer-links-list">
-                <li><a href="/services">Web Development</a></li>
-                <li><a href="/services">Mobile App Dev</a></li>
-                <li><a href="/services">UI/UX Design</a></li>
-                <li><a href="/services">Graphic Design</a></li>
-                <li><a href="/services">Backend & AI</a></li>
+                <li><a href="/services/web-development">Web Development</a></li>
+                <li><a href="/services/app-development">App Development</a></li>
+                <li><a href="/services/ai-chatbot">AI Chatbot Dev</a></li>
+                <li><a href="/services/game-development">Game Development</a></li>
+                <li><a href="/services/ui-ux-design">UI/UX Design</a></li>
+                <li><a href="/services/graphic-design">Graphic Design</a></li>
               </ul>
             </div>
-            <div className="footer-links-group">
+            <div className="footer-links-group anim-footer-lift delay-300">
               <span className="footer-links-title">Company</span>
               <ul className="footer-links-list">
                 <li><a href="#">About Us</a></li>
@@ -54,7 +55,7 @@ export default function Footer() {
                 <li><a href="#">Contact</a></li>
               </ul>
             </div>
-            <div className="footer-links-group">
+            <div className="footer-links-group anim-footer-lift delay-400">
               <span className="footer-links-title">Legal</span>
               <ul className="footer-links-list">
                 <li><a href="#">Privacy Policy</a></li>
@@ -65,9 +66,10 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="footer-bottom">
-            <p className="footer-copy">© 2025 Digital Code Solution. All rights reserved.</p>
-            <p className="footer-made">Crafted with ❤️ in Pakistan</p>
+          <div className="footer-bottom anim-footer-lift delay-500">
+            <p className="footer-copy">
+              © 2026 Digital Code Solution. All rights reserved. Designed by Muhammad Mohib or Muhammad Muneeb
+            </p>
           </div>
         </div>
       </footer>

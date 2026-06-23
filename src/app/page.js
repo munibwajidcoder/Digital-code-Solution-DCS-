@@ -4,6 +4,9 @@ import HeroRobot3D from "../components/HeroRobot3D";
 import HomeIntroGate from "../components/HomeIntroGate";
 import ResponsiveNav from "../components/ResponsiveNav";
 import GlobalScrollObserver from "../components/GlobalScrollObserver";
+import PinnedScrollWrapper from "../components/PinnedScrollWrapper";
+import ServiceCard from "../components/ServiceCard";
+import PortfolioItem3D from "../components/PortfolioItem3D";
 
 export default function Home() {
   return (
@@ -67,21 +70,26 @@ export default function Home() {
         </div>
 
         <div className="hero-content">
-          <div className="badge-pill-purple anim-slide-up delay-100">
-            <span style={{ color: "#00e5ff" }}>✦</span> We Build Digital Experiences
+          <div className="badge-pill-purple anim-3d-reveal delay-100">
+            <span style={{ color: "#a855f7" }}>✦</span> We Build Digital Experiences
           </div>
 
-          <h1 className="hero-heading anim-slide-up delay-200">
-            We Build Modern <br />
-            Websites, Apps &amp; <br />
-            <span className="text-accent-gradient">Digital Products</span>
+          <h1 className="hero-heading anim-3d-reveal anim-3d-text-wrap">
+            <span className="anim-word-3d delay-100">We</span>{" "}
+            <span className="anim-word-3d delay-100">Build</span>{" "}
+            <span className="anim-word-3d delay-200">Modern</span> <br />
+            <span className="anim-word-3d delay-300">Websites,</span>{" "}
+            <span className="anim-word-3d delay-400">Apps</span>{" "}
+            <span className="anim-word-3d delay-400">&amp;</span> <br />
+            <span className="text-accent-gradient anim-word-3d delay-500">Digital</span>{" "}
+            <span className="text-accent-gradient anim-word-3d delay-600">Products</span>
           </h1>
 
-          <p className="hero-description anim-slide-up delay-300">
+          <p className="hero-description anim-3d-reveal delay-400">
             Helping businesses grow through premium design, scalable development, AI-powered solutions, and modern digital experiences.
           </p>
 
-          <div className="hero-cta-buttons anim-slide-up delay-400">
+          <div className="hero-cta-buttons anim-3d-reveal delay-500">
             <button className="btn-primary">
               Get Started
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -98,7 +106,7 @@ export default function Home() {
             </button>
           </div>
 
-          <div className="hero-social-proof anim-slide-up delay-500">
+          <div className="hero-social-proof anim-3d-reveal delay-600">
             <div className="avatar-stack">
               <Image src="/images/avatar1.png" alt="Client 1" width={42} height={42} className="avatar-stack-item" />
               <Image src="/images/avatar2.png" alt="Client 2" width={42} height={42} className="avatar-stack-item" />
@@ -120,14 +128,14 @@ export default function Home() {
         </div>
 
         {/* 3D Robot Showcase */}
-        <div className="pedestal-3d anim-scale-in delay-300">
+        <div className="pedestal-3d anim-3d-reveal delay-300">
           <div className="hero-robot-backdrop" aria-hidden="true" />
           <HeroRobot3D />
         </div>
       </section>
 
       {/* TRUSTED BY BUSINESSES / STATS SECTION */}
-      <section className="glass-panel stats-bar-panel anim-slide-up delay-200">
+      <section className="glass-panel stats-bar-panel anim-3d-reveal delay-200">
         <div className="stats-bar-header">
           Trusted by Businesses Worldwide
         </div>
@@ -248,197 +256,221 @@ export default function Home() {
       </section>
 
       {/* ABOUT DIGITAL CODE SOLUTION */}
-      <section className="about-section">
-        {/* Premium layered background for About */}
-        <div className="about-section-bg" />
-        <div className="about-bg-glow" />
+      <PinnedScrollWrapper>
+        <section className="about-section">
+          {/* Premium layered background for About */}
+          <div className="about-section-bg" />
+          <div className="about-bg-glow" />
 
-        <div className="about-content-left">
-          <div className="badge-pill-cyan anim-slide-up delay-100">
-            👤 About Digital Code Solution
-          </div>
-
-          <h2 className="about-heading anim-slide-up delay-200">
-            Building <span className="text-accent-gradient">Digital Experiences</span> <br />
-            That Inspire Innovation
-          </h2>
-
-          <p className="about-paragraph anim-slide-up delay-300">
-            At Digital Code Solution (DCS), we transform ambitious ideas into powerful digital products. From modern websites and scalable mobile applications to AI-powered solutions and intuitive user experiences, our mission is to help businesses grow through technology, creativity, and innovation.
-          </p>
-
-          <p className="about-paragraph anim-slide-up delay-400" style={{ marginTop: "-8px" }}>
-            Our team combines strategic thinking, premium design, and clean development practices to deliver future-ready solutions that create lasting impact.
-          </p>
-
-          <div className="about-cards-row anim-slide-up delay-300">
-            <div className="about-card">
-              <div className="about-card-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <circle cx="12" cy="12" r="6"></circle>
-                  <circle cx="12" cy="12" r="2"></circle>
-                </svg>
-              </div>
-              <h3 className="about-card-title">Our Mission</h3>
-              <p className="about-card-text">
-                To empower businesses with cutting-edge digital solutions that combine creativity, performance, and innovation while delivering exceptional user experiences.
-              </p>
+          <div className="about-content-left">
+            <div className="badge-pill-purple anim-3d-reveal delay-100">
+              👤 About Digital Code Solution
             </div>
 
-            <div className="about-card">
-              <div className="about-card-icon" style={{ background: "linear-gradient(135deg, #00e5ff 0%, #00a8cc 100%)", boxShadow: "0 4px 15px rgba(0, 229, 255, 0.3)" }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>
-              </div>
-              <h3 className="about-card-title">Our Vision</h3>
-              <p className="about-card-text">
-                To become a globally recognized software agency known for building premium digital products that shape the future of technology and design.
-              </p>
-            </div>
-          </div>
+            <h2 className="about-heading anim-3d-reveal delay-200">
+              Building <span className="text-accent-gradient">Digital Experiences</span> <br />
+              That Inspire Innovation
+            </h2>
 
-          <div className="about-features-grid anim-slide-up delay-400">
-            <div className="feature-tag-item">
-              <div className="feature-icon-pill">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polyline>
-                </svg>
+            <p className="about-paragraph anim-3d-reveal delay-300">
+              At Digital Code Solution (DCS), we transform ambitious ideas into powerful digital products. From modern websites and scalable mobile applications to AI-powered solutions and intuitive user experiences, our mission is to help businesses grow through technology, creativity, and innovation.
+            </p>
+
+            <p className="about-paragraph anim-3d-reveal delay-400" style={{ marginTop: "-8px" }}>
+              Our team combines strategic thinking, premium design, and clean development practices to deliver future-ready solutions that create lasting impact.
+            </p>
+
+            <div className="about-cards-row anim-3d-reveal delay-300">
+              <div className="about-card">
+                <div className="about-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                  </svg>
+                </div>
+                <h3 className="about-card-title">Our Mission</h3>
+                <p className="about-card-text">
+                  To empower businesses with cutting-edge digital solutions that combine creativity, performance, and innovation while delivering exceptional user experiences.
+                </p>
               </div>
-              <div className="feature-text-wrap">
-                <span className="feature-title">Innovation</span>
-                <span className="feature-desc">Push boundaries with modern tech.</span>
+
+              <div className="about-card">
+                <div className="about-card-icon" style={{ background: "linear-gradient(135deg, var(--purple-glow) 0%, var(--purple-primary) 100%)", boxShadow: "0 4px 15px rgba(168, 85, 247, 0.3)" }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </div>
+                <h3 className="about-card-title">Our Vision</h3>
+                <p className="about-card-text">
+                  To become a globally recognized software agency known for building premium digital products that shape the future of technology and design.
+                </p>
               </div>
             </div>
 
-            <div className="feature-tag-item">
-              <div className="feature-icon-pill">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M6 3h12l4 6-10 13L2 9z"></path>
-                  <path d="M11 3 8 9l4 13 4-13-3-6"></path>
-                  <path d="M2 9h20"></path>
-                </svg>
+            <div className="about-features-grid anim-3d-reveal delay-400">
+              <div className="feature-tag-item">
+                <div className="feature-icon-pill">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polyline>
+                  </svg>
+                </div>
+                <div className="feature-text-wrap">
+                  <span className="feature-title">Innovation</span>
+                  <span className="feature-desc">Push boundaries with modern tech.</span>
+                </div>
               </div>
-              <div className="feature-text-wrap">
-                <span className="feature-title">Quality</span>
-                <span className="feature-desc">Deliver pixel-perfect experiences.</span>
+
+              <div className="feature-tag-item">
+                <div className="feature-icon-pill">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M6 3h12l4 6-10 13L2 9z"></path>
+                    <path d="M11 3 8 9l4 13 4-13-3-6"></path>
+                    <path d="M2 9h20"></path>
+                  </svg>
+                </div>
+                <div className="feature-text-wrap">
+                  <span className="feature-title">Quality</span>
+                  <span className="feature-desc">Deliver pixel-perfect experiences.</span>
+                </div>
+              </div>
+
+              <div className="feature-tag-item">
+                <div className="feature-icon-pill">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <div className="feature-text-wrap">
+                  <span className="feature-title">Transparency</span>
+                  <span className="feature-desc">Maintain honest communication.</span>
+                </div>
+              </div>
+
+              <div className="feature-tag-item">
+                <div className="feature-icon-pill">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <div className="feature-text-wrap">
+                  <span className="feature-title">Client Success</span>
+                  <span className="feature-desc">Measure growth through client value.</span>
+                </div>
               </div>
             </div>
 
-            <div className="feature-tag-item">
-              <div className="feature-icon-pill">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <div className="about-cta-row anim-3d-reveal delay-500">
+              <button className="btn-primary">
+                Meet Our Team
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </div>
-              <div className="feature-text-wrap">
-                <span className="feature-title">Transparency</span>
-                <span className="feature-desc">Maintain honest communication.</span>
-              </div>
-            </div>
-
-            <div className="feature-tag-item">
-              <div className="feature-icon-pill">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
+              </button>
+              <button className="btn-outline">
+                Start Your Project
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </div>
-              <div className="feature-text-wrap">
-                <span className="feature-title">Client Success</span>
-                <span className="feature-desc">Measure growth through client value.</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="about-cta-row anim-slide-up delay-500">
-            <button className="btn-primary">
-              Meet Our Team
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </button>
-            <button className="btn-outline">
-              Start Your Project
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        {/* Right side visual and metrics */}
-        <div className="about-visual-column anim-slide-right delay-200">
-          <div className="visual-image-wrapper">
-            <Image src="/images/control_room.png" alt="DCS Server Room Control Room" fill sizes="(max-width: 768px) 100vw, 50vw" priority />
-            <div className="visual-image-overlay" />
-          </div>
-
-          <div className="about-metrics-bar">
-            <div className="metric-pill-card anim-scale-in delay-300">
-              <div className="metric-badge-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                </svg>
-              </div>
-              <div className="metric-pill-number">25+</div>
-              <div className="metric-pill-label">Projects Delivered</div>
-            </div>
-
-            <div className="metric-pill-card anim-scale-in delay-400">
-              <div className="metric-badge-icon" style={{ background: "rgba(0, 229, 255, 0.12)", borderColor: "rgba(0, 229, 255, 0.25)", color: "var(--cyan-accent)" }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
-              </div>
-              <div className="metric-pill-number">100+</div>
-              <div className="metric-pill-label">Happy Clients</div>
-            </div>
-
-            <div className="metric-pill-card anim-scale-in delay-500">
-              <div className="metric-badge-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="8" r="7"></circle>
-                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-                </svg>
-              </div>
-              <div className="metric-pill-number">5+</div>
-              <div className="metric-pill-label">Years Experience</div>
+              </button>
             </div>
           </div>
 
-          <div className="team-pill-card anim-slide-up delay-600">
-            <div className="team-avatars-info">
-              <div className="avatar-stack">
-                <Image src="/images/avatar1.png" alt="Team 1" width={42} height={42} className="avatar-stack-item" />
-                <Image src="/images/avatar2.png" alt="Team 2" width={42} height={42} className="avatar-stack-item" />
-                <Image src="/images/avatar3.png" alt="Team 3" width={42} height={42} className="avatar-stack-item" />
-                <Image src="/images/avatar4.png" alt="Team 4" width={42} height={42} className="avatar-stack-item" />
+          {/* Right side visual and metrics */}
+          <div className="about-visual-column anim-3d-reveal delay-200">
+            <div className="visual-image-wrapper sticky-scroll-window">
+              <div 
+                className="sticky-scroll-track" 
+                style={{ 
+                  height: "400%",
+                  transform: `translateY(calc(var(--scroll-progress, 0) * -75%))` 
+                }}
+              >
+                <div className="scroll-image-slide" style={{ height: "25%" }}>
+                  <Image src="/images/office_workspace.png" alt="Digital Workspace" fill sizes="(max-width: 768px) 100vw, 50vw" priority style={{ objectFit: "cover" }} />
+                  <div className="visual-image-overlay" />
+                </div>
+                <div className="scroll-image-slide" style={{ height: "25%" }}>
+                  <Image src="/images/ai_chatbot.png" alt="AI Chatbot Interface" fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+                  <div className="visual-image-overlay" />
+                </div>
+                <div className="scroll-image-slide" style={{ height: "25%" }}>
+                  <Image src="/images/digital_product.png" alt="SaaS Product Dashboard" fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+                  <div className="visual-image-overlay" />
+                </div>
+                <div className="scroll-image-slide" style={{ height: "25%" }}>
+                  <Image src="/images/security_encryption.png" alt="Cybersecurity and Encryption" fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+                  <div className="visual-image-overlay" />
+                </div>
               </div>
-              <span className="team-avatars-label">
-                Creative Designers + Expert Developers + AI Engineers
-              </span>
             </div>
 
-            <button className="team-avatars-btn">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-              </svg>
-            </button>
+            <div className="about-metrics-bar">
+              <div className="metric-pill-card anim-3d-reveal delay-300">
+                <div className="metric-badge-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <div className="metric-pill-number">25+</div>
+                <div className="metric-pill-label">Projects Delivered</div>
+              </div>
+
+              <div className="metric-pill-card anim-3d-reveal delay-400">
+                <div className="metric-badge-icon" style={{ background: "rgba(168, 85, 247, 0.12)", borderColor: "rgba(168, 85, 247, 0.25)", color: "var(--purple-glow)" }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div className="metric-pill-number">100+</div>
+                <div className="metric-pill-label">Happy Clients</div>
+              </div>
+
+              <div className="metric-pill-card anim-3d-reveal delay-500">
+                <div className="metric-badge-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                  </svg>
+                </div>
+                <div className="metric-pill-number">5+</div>
+                <div className="metric-pill-label">Years Experience</div>
+              </div>
+            </div>
+
+            <div className="team-pill-card anim-3d-reveal delay-600">
+              <div className="team-avatars-info">
+                <div className="avatar-stack">
+                  <Image src="/images/avatar1.png" alt="Team 1" width={42} height={42} className="avatar-stack-item" />
+                  <Image src="/images/avatar2.png" alt="Team 2" width={42} height={42} className="avatar-stack-item" />
+                  <Image src="/images/avatar3.png" alt="Team 3" width={42} height={42} className="avatar-stack-item" />
+                  <Image src="/images/avatar4.png" alt="Team 4" width={42} height={42} className="avatar-stack-item" />
+                </div>
+                <span className="team-avatars-label">
+                  Creative Designers + Expert Developers + AI Engineers
+                </span>
+              </div>
+
+              <button className="team-avatars-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </button>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </PinnedScrollWrapper>
 
       {/* ── HOME SERVICES SECTION ── */}
       <section className="hs-section" id="services" aria-label="Our Services">
@@ -452,18 +484,18 @@ export default function Home() {
 
         {/* Header */}
         <div className="hs-header">
-          <div className="hs-eyebrow anim-fade-in">
+          <div className="hs-eyebrow anim-3d-reveal">
             <span className="hs-eyebrow-dot" />
             OUR SERVICES
             <span className="hs-eyebrow-dot" />
           </div>
-          <h2 className="hs-heading anim-slide-up delay-100">
+          <h2 className="hs-heading anim-3d-reveal delay-100">
             Our Premium <span className="hs-heading-gradient">Services</span>
           </h2>
-          <p className="hs-subheading anim-slide-up delay-200">
+          <p className="hs-subheading anim-3d-reveal delay-200">
             We provide high-quality digital solutions to help your business<br />grow, scale and succeed.
           </p>
-          <div className="hs-divider anim-fade-in delay-300">
+          <div className="hs-divider anim-3d-reveal delay-300">
             <span className="hs-divider-dot" />
           </div>
         </div>
@@ -472,109 +504,96 @@ export default function Home() {
         <div className="hs-cards-grid">
 
           {/* Card 1 — Web Development */}
-          <div className="hs-card anim-slide-up delay-100">
-            <div className="hs-card-icon-wrap">
-              <div className="hs-icon-orb">
-                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="16 18 22 12 16 6"></polyline>
-                  <polyline points="8 6 2 12 8 18"></polyline>
-                </svg>
-              </div>
-            </div>
-            <h3 className="hs-card-title">Web Development</h3>
-            <p className="hs-card-desc">We architect high-performance, fully responsive websites using the latest modern technologies. From compelling marketing sites to highly complex, scalable web applications, our custom web solutions are built to dominate the digital space. We focus on lightning-fast load times, seamless user experiences, and robust security, ensuring your business stays miles ahead of the competition.</p>
-            <a href="/services" className="hs-arrow-btn" aria-label="Learn more about Web Development">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
+          <ServiceCard
+            title="Web Development"
+            description="High-performance, responsive websites and scalable web applications built with Next.js, React, and modern tech stacks."
+            delayClass="delay-100"
+            link="/services/web-development"
+            icon={
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
               </svg>
-            </a>
-          </div>
+            }
+          />
 
           {/* Card 2 — Mobile App Development */}
-          <div className="hs-card anim-slide-up delay-200">
-            <div className="hs-card-icon-wrap">
-              <div className="hs-icon-orb">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                </svg>
-              </div>
-            </div>
-            <h3 className="hs-card-title">Mobile App Development</h3>
-            <p className="hs-card-desc">We develop world-class, cross-platform mobile applications for both iOS and Android. By utilizing cutting-edge frameworks, we ensure your app delivers a native-like experience with blazing-fast performance. From conceptualization and UI design to seamless API integration and final deployment, we build highly intuitive and scalable mobile solutions that drive immense business growth.</p>
-            <a href="/services" className="hs-arrow-btn" aria-label="Learn more about Mobile App Development">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
+          <ServiceCard
+            title="Mobile App Development"
+            description="Native-like, cross-platform mobile applications for iOS and Android built with Flutter and React Native."
+            delayClass="delay-200"
+            link="/services/app-development"
+            icon={
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
               </svg>
-            </a>
-          </div>
+            }
+          />
 
           {/* Card 3 — AI Chatbot Development */}
-          <div className="hs-card anim-slide-up delay-300">
-            <div className="hs-card-icon-wrap">
-              <div className="hs-icon-orb">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                  <line x1="9" y1="10" x2="9.01" y2="10"></line>
-                  <line x1="12" y1="10" x2="12.01" y2="10"></line>
-                  <line x1="15" y1="10" x2="15.01" y2="10"></line>
-                </svg>
-              </div>
-            </div>
-            <h3 className="hs-card-title">AI Chatbot Development</h3>
-            <p className="hs-card-desc">Revolutionize your customer support with our next-generation AI chatbots. We integrate advanced natural language processing and deep machine learning to create intelligent virtual assistants that understand context and resolve queries instantly. Available 24/7, our custom AI solutions automate complex conversations, dramatically reduce costs, and deliver an unprecedented level of engagement.</p>
-            <a href="/services" className="hs-arrow-btn" aria-label="Learn more about AI Chatbot Development">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
+          <ServiceCard
+            title="AI Chatbot Development"
+            description="Next-generation intelligent virtual assistants and automation systems powered by LLMs and natural language processing."
+            delayClass="delay-300"
+            link="/services/ai-chatbot"
+            icon={
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                <line x1="9" y1="10" x2="9.01" y2="10"></line>
+                <line x1="12" y1="10" x2="12.01" y2="10"></line>
+                <line x1="15" y1="10" x2="15.01" y2="10"></line>
               </svg>
-            </a>
-          </div>
+            }
+          />
 
           {/* Card 4 — UI/UX Design */}
-          <div className="hs-card hs-card-center-start anim-slide-up delay-100">
-            <div className="hs-card-icon-wrap">
-              <div className="hs-icon-orb">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <circle cx="12" cy="12" r="4"></circle>
-                  <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
-                  <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
-                  <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
-                  <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>
-                </svg>
-              </div>
-            </div>
-            <h3 className="hs-card-title">UI/UX Design</h3>
-            <p className="hs-card-desc">We design breathtaking, user-centric interfaces rooted in comprehensive user research and behavioral psychology. Our process involves deep strategic planning, wireframing, and highly interactive prototyping to ensure every click feels natural. We transform complex workflows into stunning, frictionless digital experiences engineered to maximize user retention and conversion rates.</p>
-            <a href="/services" className="hs-arrow-btn" aria-label="Learn more about UI/UX Design">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
+          <ServiceCard
+            title="UI/UX Design"
+            description="Intuitive, user-centric interface designs and interactive prototypes crafted in Figma for conversion and engagement."
+            delayClass="delay-100"
+            link="/services/ui-ux-design"
+            icon={
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="4"></circle>
+                <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+                <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+                <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+                <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>
               </svg>
-            </a>
-          </div>
+            }
+          />
 
           {/* Card 5 — Graphic Design */}
-          <div className="hs-card anim-slide-up delay-200">
-            <div className="hs-card-icon-wrap">
-              <div className="hs-icon-orb">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                </svg>
-              </div>
-            </div>
-            <h3 className="hs-card-title">Graphic Design</h3>
-            <p className="hs-card-desc">Elevate your brand's visual identity with our immersive and highly creative graphic design services. We craft striking, modern visuals—from premium branding and logo design to dynamic 3D elements and marketing collateral. By blending artistic innovation with strategic market insights, we create unforgettable digital aesthetics that instantly capture attention and build deep trust.</p>
-            <a href="/services" className="hs-arrow-btn" aria-label="Learn more about Graphic Design">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
+          <ServiceCard
+            title="Graphic Design"
+            description="Immersive visual identities, premium branding, marketing collateral, and custom assets that capture brand values."
+            delayClass="delay-200"
+            link="/services/graphic-design"
+            icon={
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"></path>
               </svg>
-            </a>
-          </div>
+            }
+          />
+
+          {/* Card 6 — Game Development */}
+          <ServiceCard
+            title="Game Development"
+            description="Immersive 2D and 3D games with engaging mechanics, rich graphics, and seamless performance across all platforms."
+            delayClass="delay-300"
+            link="/services/game-development"
+            icon={
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="6" y1="12" x2="10" y2="12"></line>
+                <line x1="8" y1="10" x2="8" y2="14"></line>
+                <line x1="15" y1="13" x2="15.01" y2="13"></line>
+                <line x1="18" y1="11" x2="18.01" y2="11"></line>
+                <rect x="2" y="6" width="20" height="12" rx="3"></rect>
+              </svg>
+            }
+          />
 
         </div>
       </section>
@@ -586,7 +605,7 @@ export default function Home() {
         <div className="tech-bg-glow-2" />
 
         <div className="w-full max-w-[1920px] relative z-10 mx-auto px-4">
-          <div className="tech-header anim-slide-up">
+          <div className="tech-header anim-3d-reveal">
             <div className="tech-eyebrow">
               <span className="tech-eyebrow-dot" /> TECH STACK
             </div>
@@ -598,7 +617,7 @@ export default function Home() {
           <div className="tech-cards-grid">
 
             {/* Web Development */}
-            <div className="tech-card span-2 anim-slide-up delay-100">
+            <div className="tech-card span-2 anim-3d-reveal delay-100">
               <div className="tech-card-header">
                 <div className="tech-card-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -632,7 +651,7 @@ export default function Home() {
             </div>
 
             {/* Mobile App Development */}
-            <div className="tech-card span-2 anim-slide-up delay-200">
+            <div className="tech-card span-2 anim-3d-reveal delay-200">
               <div className="tech-card-header">
                 <div className="tech-card-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -666,7 +685,7 @@ export default function Home() {
             </div>
 
             {/* UI/UX Design */}
-            <div className="tech-card span-2 anim-slide-up delay-300">
+            <div className="tech-card span-2 anim-3d-reveal delay-300">
               <div className="tech-card-header">
                 <div className="tech-card-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -710,7 +729,7 @@ export default function Home() {
             </div>
 
             {/* Graphic Design */}
-            <div className="tech-card span-2-center anim-slide-up delay-100">
+            <div className="tech-card span-2-center anim-3d-reveal delay-100">
               <div className="tech-card-header">
                 <div className="tech-card-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -743,7 +762,7 @@ export default function Home() {
             </div>
 
             {/* Backend & AI */}
-            <div className="tech-card span-3 anim-slide-up delay-200">
+            <div className="tech-card span-3 anim-3d-reveal delay-200">
               <div className="tech-card-header">
                 <div className="tech-card-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -784,7 +803,7 @@ export default function Home() {
 
           </div>
 
-          <div className="tech-cta-wrap anim-fade-in delay-300">
+          <div className="tech-cta-wrap anim-3d-reveal delay-300">
             <a href="/contact" className="tech-cta-btn">
               Let's Build Something Amazing
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -825,98 +844,56 @@ export default function Home() {
             </p>
           </div>
 
-          {/* ── Project 01 — Image Left ── */}
-          <div className="port-item anim-fade-up">
-            <div className="port-image-wrap port-image-left">
-              <div className="port-image-glass">
-                <div className="port-image-inner">
-                  <img src="/images/portfolio/project1.png" alt="AI Analytics Dashboard" className="port-img" />
-                </div>
-                <div className="port-image-glow" />
-              </div>
-            </div>
-            <div className="port-info port-info-right">
-              <span className="port-num-badge">01</span>
-              <h3 className="port-project-title">AI-Powered Analytics Dashboard</h3>
-              <p className="port-project-desc">
-                A powerful analytics dashboard that provides real-time insights, data visualization, and AI-driven recommendations to help businesses make smarter decisions.
-              </p>
-              <ul className="port-features">
-                <li><span className="port-feat-icon">◈</span> Real-time data analytics</li>
-                <li><span className="port-feat-icon">◈</span> AI-powered insights engine</li>
-                <li><span className="port-feat-icon">◈</span> Custom reports generation</li>
-                <li><span className="port-feat-icon">◈</span> Secure &amp; scalable architecture</li>
-              </ul>
-              <a href="/portfolio" className="port-cta-btn">
-                View Case Study
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
-                </svg>
-              </a>
-            </div>
-          </div>
+          <PortfolioItem3D
+            num="01"
+            title="AI-Powered Analytics Dashboard"
+            desc="A powerful analytics dashboard that provides real-time insights, data visualization, and AI-driven recommendations to help businesses make smarter decisions."
+            features={[
+              "Real-time data analytics",
+              "AI-powered insights engine",
+              "Custom reports generation",
+              "Secure & scalable architecture"
+            ]}
+            imgSrc="/images/portfolio/project1.png"
+            imgAlt="AI Analytics Dashboard"
+            ctaLink="/portfolio"
+            imagePosition="left"
+            delayClass=""
+          />
 
-          {/* ── Project 02 — Image Right ── */}
-          <div className="port-item anim-fade-up delay-100">
-            <div className="port-info port-info-left">
-              <span className="port-num-badge">02</span>
-              <h3 className="port-project-title">E-Commerce Web Platform</h3>
-              <p className="port-project-desc">
-                A modern e-commerce platform built for performance and scalability. It offers a seamless shopping experience with advanced features and secure payments.
-              </p>
-              <ul className="port-features">
-                <li><span className="port-feat-icon">◈</span> Modern &amp; responsive design</li>
-                <li><span className="port-feat-icon">◈</span> Secure payment integration</li>
-                <li><span className="port-feat-icon">◈</span> Advanced product filtering</li>
-                <li><span className="port-feat-icon">◈</span> Order tracking system</li>
-              </ul>
-              <a href="/portfolio" className="port-cta-btn">
-                View Case Study
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
-                </svg>
-              </a>
-            </div>
-            <div className="port-image-wrap port-image-right">
-              <div className="port-image-glass">
-                <div className="port-image-inner">
-                  <img src="/images/portfolio/project2.png" alt="E-Commerce Platform" className="port-img" />
-                </div>
-                <div className="port-image-glow" />
-              </div>
-            </div>
-          </div>
+          <PortfolioItem3D
+            num="02"
+            title="E-Commerce Web Platform"
+            desc="A modern e-commerce platform built for performance and scalability. It offers a seamless shopping experience with advanced features and secure payments."
+            features={[
+              "Modern & responsive design",
+              "Secure payment integration",
+              "Advanced product filtering",
+              "Order tracking system"
+            ]}
+            imgSrc="/images/portfolio/project2.png"
+            imgAlt="E-Commerce Platform"
+            ctaLink="/portfolio"
+            imagePosition="right"
+            delayClass="delay-100"
+          />
 
-          {/* ── Project 03 — Image Left ── */}
-          <div className="port-item anim-fade-up delay-200">
-            <div className="port-image-wrap port-image-left">
-              <div className="port-image-glass">
-                <div className="port-image-inner">
-                  <img src="/images/portfolio/project3.png" alt="Fitness Mobile Application" className="port-img" />
-                </div>
-                <div className="port-image-glow" />
-              </div>
-            </div>
-            <div className="port-info port-info-right">
-              <span className="port-num-badge">03</span>
-              <h3 className="port-project-title">Fitness Mobile Application</h3>
-              <p className="port-project-desc">
-                A feature-rich fitness app that helps users track their workouts, monitor progress, and achieve their health goals with personalized plans.
-              </p>
-              <ul className="port-features">
-                <li><span className="port-feat-icon">◈</span> Personalized workout plans</li>
-                <li><span className="port-feat-icon">◈</span> Progress tracking</li>
-                <li><span className="port-feat-icon">◈</span> Nutrition &amp; diet plans</li>
-                <li><span className="port-feat-icon">◈</span> Push notifications &amp; reminders</li>
-              </ul>
-              <a href="/portfolio" className="port-cta-btn">
-                View Case Study
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
-                </svg>
-              </a>
-            </div>
-          </div>
+          <PortfolioItem3D
+            num="03"
+            title="Fitness Mobile Application"
+            desc="A feature-rich fitness app that helps users track their workouts, monitor progress, and achieve their health goals with personalized plans."
+            features={[
+              "Personalized workout plans",
+              "Progress tracking",
+              "Nutrition & diet plans",
+              "Push notifications & reminders"
+            ]}
+            imgSrc="/images/portfolio/project3.png"
+            imgAlt="Fitness Mobile Application"
+            ctaLink="/portfolio"
+            imagePosition="left"
+            delayClass="delay-200"
+          />
 
         </div>
       </section>
@@ -1037,70 +1014,69 @@ export default function Home() {
         <div className="contact-container">
           <div className="contact-inner">
             {/* Left Info */}
-            <div className="contact-info anim-fade-up">
-              <span className="contact-eyebrow">
+            <div className="contact-info">
+              <span className="contact-eyebrow anim-3d-slide-left">
                 <span className="contact-eyebrow-dot" />
                 GET IN TOUCH
               </span>
-              <h2 className="contact-heading">
+              <h2 className="contact-heading anim-3d-slide-left delay-100">
                 Let's Build Something <span className="contact-heading-gradient">Amazing Together</span>
               </h2>
-              <p className="contact-desc">
+              <p className="contact-desc anim-3d-slide-left delay-200">
                 Have a project in mind? We'd love to hear about it. Drop us a message and our team will get back to you within 24 hours.
               </p>
               <div className="contact-details">
-                <div className="contact-detail-item">
+                <div className="contact-detail-item anim-3d-slide-left delay-300">
                   <div className="contact-detail-icon">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
                   </div>
                   <div>
                     <span className="contact-detail-label">Email Us</span>
-                    <span className="contact-detail-value">hello@digitalcodesolution.com</span>
+                    <span className="contact-detail-value">digitalcodesolution.company@gmail.com</span>
                   </div>
                 </div>
-                <div className="contact-detail-item">
+                <div className="contact-detail-item anim-3d-slide-left delay-400">
                   <div className="contact-detail-icon">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.61 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                   </div>
                   <div>
                     <span className="contact-detail-label">Call Us</span>
-                    <span className="contact-detail-value">+92 300 1234567</span>
+                    <span className="contact-detail-value">+92 370 302 2622</span>
                   </div>
                 </div>
-                <div className="contact-detail-item">
+                <div className="contact-detail-item anim-3d-slide-left delay-500">
                   <div className="contact-detail-icon">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
                   </div>
                   <div>
                     <span className="contact-detail-label">Location</span>
-                    <span className="contact-detail-value">Lahore, Pakistan</span>
+                    <span className="contact-detail-value">Karachi, Pakistan</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Right Form */}
-            <div className="contact-form-wrap anim-fade-up delay-200">
+            <div className="contact-form-wrap">
               <form className="contact-form">
                 <div className="contact-form-row">
-                  <div className="contact-field">
+                  <div className="contact-field anim-3d-slide-right delay-100">
                     <label className="contact-label">Your Name</label>
                     <input type="text" className="contact-input" placeholder="John Doe" />
                   </div>
-                  <div className="contact-field">
+                  <div className="contact-field anim-3d-slide-right delay-200">
                     <label className="contact-label">Email Address</label>
                     <input type="email" className="contact-input" placeholder="john@example.com" />
                   </div>
                 </div>
-                <div className="contact-field">
+                <div className="contact-field anim-3d-slide-right delay-300">
                   <label className="contact-label">Subject</label>
                   <input type="text" className="contact-input" placeholder="Project Inquiry" />
                 </div>
-                <div className="contact-field">
+                <div className="contact-field anim-3d-slide-right delay-400">
                   <label className="contact-label">Message</label>
                   <textarea className="contact-textarea" rows="5" placeholder="Tell us about your project..."></textarea>
                 </div>
-                <button type="submit" className="contact-submit-btn">
+                <button type="submit" className="contact-submit-btn anim-3d-slide-right delay-500">
                   Send Message
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" />
@@ -1120,7 +1096,7 @@ export default function Home() {
         <div className="footer-container">
           <div className="footer-top">
             {/* Brand */}
-            <div className="footer-brand">
+            <div className="footer-brand anim-footer-lift delay-100">
               <a href="#" className="footer-logo">
                 <img src="/images/logo.png" alt="DCS Logo" style={{ width: '44px', height: 'auto', filter: 'drop-shadow(0 0 8px rgba(122,34,255,0.5))' }} />
                 <div>
@@ -1148,17 +1124,18 @@ export default function Home() {
             </div>
 
             {/* Links */}
-            <div className="footer-links-group">
+            <div className="footer-links-group anim-footer-lift delay-200">
               <span className="footer-links-title">Services</span>
               <ul className="footer-links-list">
-                <li><a href="/services">Web Development</a></li>
-                <li><a href="/services">Mobile App Dev</a></li>
-                <li><a href="/services">UI/UX Design</a></li>
-                <li><a href="/services">Graphic Design</a></li>
-                <li><a href="/services">Backend & AI</a></li>
+                <li><a href="/services/web-development">Web Development</a></li>
+                <li><a href="/services/app-development">App Development</a></li>
+                <li><a href="/services/ai-chatbot">AI Chatbot Dev</a></li>
+                <li><a href="/services/game-development">Game Development</a></li>
+                <li><a href="/services/ui-ux-design">UI/UX Design</a></li>
+                <li><a href="/services/graphic-design">Graphic Design</a></li>
               </ul>
             </div>
-            <div className="footer-links-group">
+            <div className="footer-links-group anim-footer-lift delay-300">
               <span className="footer-links-title">Company</span>
               <ul className="footer-links-list">
                 <li><a href="#">About Us</a></li>
@@ -1168,7 +1145,7 @@ export default function Home() {
                 <li><a href="#">Contact</a></li>
               </ul>
             </div>
-            <div className="footer-links-group">
+            <div className="footer-links-group anim-footer-lift delay-400">
               <span className="footer-links-title">Legal</span>
               <ul className="footer-links-list">
                 <li><a href="#">Privacy Policy</a></li>
@@ -1179,9 +1156,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="footer-bottom">
-            <p className="footer-copy">© 2025 Digital Code Solution. All rights reserved.</p>
-            <p className="footer-made">Crafted with ❤️ in Pakistan</p>
+          <div className="footer-bottom anim-footer-lift delay-500">
+            <p className="footer-copy">
+              © 2026 Digital Code Solution. All rights reserved. Designed by Muhammad Mohib or Muhammad Muneeb
+            </p>
           </div>
         </div>
       </footer>

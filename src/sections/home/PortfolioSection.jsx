@@ -1,4 +1,6 @@
 
+import PortfolioItem3D from "../../components/PortfolioItem3D";
+
 export default function PortfolioSection() {
   return (
     <section className="port-section" id="portfolio">
@@ -27,98 +29,56 @@ export default function PortfolioSection() {
             </p>
           </div>
 
-          {/* ── Project 01 — Image Left ── */}
-          <div className="port-item anim-fade-up">
-            <div className="port-image-wrap port-image-left">
-              <div className="port-image-glass">
-                <div className="port-image-inner">
-                  <img src="/images/portfolio/project1.png" alt="AI Analytics Dashboard" className="port-img" />
-                </div>
-                <div className="port-image-glow" />
-              </div>
-            </div>
-            <div className="port-info port-info-right">
-              <span className="port-num-badge">01</span>
-              <h3 className="port-project-title">AI-Powered Analytics Dashboard</h3>
-              <p className="port-project-desc">
-                A powerful analytics dashboard that provides real-time insights, data visualization, and AI-driven recommendations to help businesses make smarter decisions.
-              </p>
-              <ul className="port-features">
-                <li><span className="port-feat-icon">◈</span> Real-time data analytics</li>
-                <li><span className="port-feat-icon">◈</span> AI-powered insights engine</li>
-                <li><span className="port-feat-icon">◈</span> Custom reports generation</li>
-                <li><span className="port-feat-icon">◈</span> Secure &amp; scalable architecture</li>
-              </ul>
-              <a href="/portfolio" className="port-cta-btn">
-                View Case Study
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
-                </svg>
-              </a>
-            </div>
-          </div>
+          <PortfolioItem3D
+            num="01"
+            title="AI-Powered Analytics Dashboard"
+            desc="A powerful analytics dashboard that provides real-time insights, data visualization, and AI-driven recommendations to help businesses make smarter decisions."
+            features={[
+              "Real-time data analytics",
+              "AI-powered insights engine",
+              "Custom reports generation",
+              "Secure & scalable architecture"
+            ]}
+            imgSrc="/images/portfolio/project1.png"
+            imgAlt="AI Analytics Dashboard"
+            ctaLink="/portfolio"
+            imagePosition="left"
+            delayClass=""
+          />
 
-          {/* ── Project 02 — Image Right ── */}
-          <div className="port-item anim-fade-up delay-100">
-            <div className="port-info port-info-left">
-              <span className="port-num-badge">02</span>
-              <h3 className="port-project-title">E-Commerce Web Platform</h3>
-              <p className="port-project-desc">
-                A modern e-commerce platform built for performance and scalability. It offers a seamless shopping experience with advanced features and secure payments.
-              </p>
-              <ul className="port-features">
-                <li><span className="port-feat-icon">◈</span> Modern &amp; responsive design</li>
-                <li><span className="port-feat-icon">◈</span> Secure payment integration</li>
-                <li><span className="port-feat-icon">◈</span> Advanced product filtering</li>
-                <li><span className="port-feat-icon">◈</span> Order tracking system</li>
-              </ul>
-              <a href="/portfolio" className="port-cta-btn">
-                View Case Study
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
-                </svg>
-              </a>
-            </div>
-            <div className="port-image-wrap port-image-right">
-              <div className="port-image-glass">
-                <div className="port-image-inner">
-                  <img src="/images/portfolio/project2.png" alt="E-Commerce Platform" className="port-img" />
-                </div>
-                <div className="port-image-glow" />
-              </div>
-            </div>
-          </div>
+          <PortfolioItem3D
+            num="02"
+            title="E-Commerce Web Platform"
+            desc="A modern e-commerce platform built for performance and scalability. It offers a seamless shopping experience with advanced features and secure payments."
+            features={[
+              "Modern & responsive design",
+              "Secure payment integration",
+              "Advanced product filtering",
+              "Order tracking system"
+            ]}
+            imgSrc="/images/portfolio/project2.png"
+            imgAlt="E-Commerce Platform"
+            ctaLink="/portfolio"
+            imagePosition="right"
+            delayClass="delay-100"
+          />
 
-          {/* ── Project 03 — Image Left ── */}
-          <div className="port-item anim-fade-up delay-200">
-            <div className="port-image-wrap port-image-left">
-              <div className="port-image-glass">
-                <div className="port-image-inner">
-                  <img src="/images/portfolio/project3.png" alt="Fitness Mobile Application" className="port-img" />
-                </div>
-                <div className="port-image-glow" />
-              </div>
-            </div>
-            <div className="port-info port-info-right">
-              <span className="port-num-badge">03</span>
-              <h3 className="port-project-title">Fitness Mobile Application</h3>
-              <p className="port-project-desc">
-                A feature-rich fitness app that helps users track their workouts, monitor progress, and achieve their health goals with personalized plans.
-              </p>
-              <ul className="port-features">
-                <li><span className="port-feat-icon">◈</span> Personalized workout plans</li>
-                <li><span className="port-feat-icon">◈</span> Progress tracking</li>
-                <li><span className="port-feat-icon">◈</span> Nutrition &amp; diet plans</li>
-                <li><span className="port-feat-icon">◈</span> Push notifications &amp; reminders</li>
-              </ul>
-              <a href="/portfolio" className="port-cta-btn">
-                View Case Study
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
-                </svg>
-              </a>
-            </div>
-          </div>
+          <PortfolioItem3D
+            num="03"
+            title="Fitness Mobile Application"
+            desc="A feature-rich fitness app that helps users track their workouts, monitor progress, and achieve their health goals with personalized plans."
+            features={[
+              "Personalized workout plans",
+              "Progress tracking",
+              "Nutrition & diet plans",
+              "Push notifications & reminders"
+            ]}
+            imgSrc="/images/portfolio/project3.png"
+            imgAlt="Fitness Mobile Application"
+            ctaLink="/portfolio"
+            imagePosition="left"
+            delayClass="delay-200"
+          />
 
         </div>
       </section>

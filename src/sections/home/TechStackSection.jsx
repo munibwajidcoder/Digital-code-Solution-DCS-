@@ -7,7 +7,7 @@ export default function TechStackSection() {
         <div className="tech-bg-glow-2" />
 
         <div className="w-full max-w-[1920px] relative z-10 mx-auto px-4">
-          <div className="tech-header anim-slide-up">
+          <div className="tech-header anim-3d-reveal">
             <div className="tech-eyebrow">
               <span className="tech-eyebrow-dot" /> TECH STACK
             </div>
@@ -19,7 +19,7 @@ export default function TechStackSection() {
           <div className="tech-cards-grid">
 
             {/* Web Development */}
-            <div className="tech-card span-2 anim-slide-up delay-100">
+            <div className="tech-card span-2 anim-3d-reveal delay-100">
               <div className="tech-card-header">
                 <div className="tech-card-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -53,7 +53,7 @@ export default function TechStackSection() {
             </div>
 
             {/* Mobile App Development */}
-            <div className="tech-card span-2 anim-slide-up delay-200">
+            <div className="tech-card span-2 anim-3d-reveal delay-200">
               <div className="tech-card-header">
                 <div className="tech-card-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -87,7 +87,7 @@ export default function TechStackSection() {
             </div>
 
             {/* UI/UX Design */}
-            <div className="tech-card span-2 anim-slide-up delay-300">
+            <div className="tech-card span-2 anim-3d-reveal delay-300">
               <div className="tech-card-header">
                 <div className="tech-card-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -131,7 +131,7 @@ export default function TechStackSection() {
             </div>
 
             {/* Graphic Design */}
-            <div className="tech-card span-2-center anim-slide-up delay-100">
+            <div className="tech-card span-2-center anim-3d-reveal delay-100">
               <div className="tech-card-header">
                 <div className="tech-card-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -164,7 +164,7 @@ export default function TechStackSection() {
             </div>
 
             {/* Backend & AI */}
-            <div className="tech-card span-3 anim-slide-up delay-200">
+            <div className="tech-card span-3 anim-3d-reveal delay-200">
               <div className="tech-card-header">
                 <div className="tech-card-icon">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -205,7 +205,7 @@ export default function TechStackSection() {
 
           </div>
 
-          <div className="tech-cta-wrap anim-fade-in delay-300">
+          <div className="tech-cta-wrap anim-3d-reveal delay-300">
             <a href="/contact" className="tech-cta-btn">
               Let's Build Something Amazing
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

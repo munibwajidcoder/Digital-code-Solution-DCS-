@@ -42,7 +42,7 @@ export default function HomeServicesSection() {
               </div>
             </div>
             <h3 className="hs-card-title">Web Development</h3>
-            <p className="hs-card-desc">We architect high-performance, fully responsive websites using the latest modern technologies. From compelling marketing sites to highly complex, scalable web applications, our custom web solutions are built to dominate the digital space. We focus on lightning-fast load times, seamless user experiences, and robust security, ensuring your business stays miles ahead of the competition.</p>
+            <p className="hs-card-desc">High-performance, responsive websites and scalable web applications built with Next.js, React, and modern tech stacks.</p>
             <a href="/services" className="hs-arrow-btn" aria-label="Learn more about Web Development">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -62,7 +62,7 @@ export default function HomeServicesSection() {
               </div>
             </div>
             <h3 className="hs-card-title">Mobile App Development</h3>
-            <p className="hs-card-desc">We develop world-class, cross-platform mobile applications for both iOS and Android. By utilizing cutting-edge frameworks, we ensure your app delivers a native-like experience with blazing-fast performance. From conceptualization and UI design to seamless API integration and final deployment, we build highly intuitive and scalable mobile solutions that drive immense business growth.</p>
+            <p className="hs-card-desc">Native-like, cross-platform mobile applications for iOS and Android built with Flutter and React Native.</p>
             <a href="/services" className="hs-arrow-btn" aria-label="Learn more about Mobile App Development">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -84,7 +84,7 @@ export default function HomeServicesSection() {
               </div>
             </div>
             <h3 className="hs-card-title">AI Chatbot Development</h3>
-            <p className="hs-card-desc">Revolutionize your customer support with our next-generation AI chatbots. We integrate advanced natural language processing and deep machine learning to create intelligent virtual assistants that understand context and resolve queries instantly. Available 24/7, our custom AI solutions automate complex conversations, dramatically reduce costs, and deliver an unprecedented level of engagement.</p>
+            <p className="hs-card-desc">Next-generation intelligent virtual assistants and automation systems powered by LLMs and natural language processing.</p>
             <a href="/services" className="hs-arrow-btn" aria-label="Learn more about AI Chatbot Development">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -94,7 +94,7 @@ export default function HomeServicesSection() {
           </div>
 
           {/* Card 4 — UI/UX Design */}
-          <div className="hs-card hs-card-center-start anim-slide-up delay-100">
+          <div className="hs-card anim-slide-up delay-100">
             <div className="hs-card-icon-wrap">
               <div className="hs-icon-orb">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -108,7 +108,7 @@ export default function HomeServicesSection() {
               </div>
             </div>
             <h3 className="hs-card-title">UI/UX Design</h3>
-            <p className="hs-card-desc">We design breathtaking, user-centric interfaces rooted in comprehensive user research and behavioral psychology. Our process involves deep strategic planning, wireframing, and highly interactive prototyping to ensure every click feels natural. We transform complex workflows into stunning, frictionless digital experiences engineered to maximize user retention and conversion rates.</p>
+            <p className="hs-card-desc">Intuitive, user-centric interface designs and interactive prototypes crafted in Figma for conversion and engagement.</p>
             <a href="/services" className="hs-arrow-btn" aria-label="Learn more about UI/UX Design">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -127,8 +127,31 @@ export default function HomeServicesSection() {
               </div>
             </div>
             <h3 className="hs-card-title">Graphic Design</h3>
-            <p className="hs-card-desc">Elevate your brand's visual identity with our immersive and highly creative graphic design services. We craft striking, modern visuals—from premium branding and logo design to dynamic 3D elements and marketing collateral. By blending artistic innovation with strategic market insights, we create unforgettable digital aesthetics that instantly capture attention and build deep trust.</p>
-            <a href="/services" className="hs-arrow-btn" aria-label="Learn more about Graphic Design">
+            <p className="hs-card-desc">Immersive visual identities, premium branding, marketing collateral, and custom assets that capture brand values.</p>
+            <a href="/services/graphic-design" className="hs-arrow-btn" aria-label="Learn more about Graphic Design">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          {/* Card 6 — Game Development */}
+          <div className="hs-card anim-slide-up delay-300">
+            <div className="hs-card-icon-wrap">
+              <div className="hs-icon-orb">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="6" y1="12" x2="10" y2="12"></line>
+                  <line x1="8" y1="10" x2="8" y2="14"></line>
+                  <line x1="15" y1="13" x2="15.01" y2="13"></line>
+                  <line x1="18" y1="11" x2="18.01" y2="11"></line>
+                  <rect x="2" y="6" width="20" height="12" rx="3"></rect>
+                </svg>
+              </div>
+            </div>
+            <h3 className="hs-card-title">Game Development</h3>
+            <p className="hs-card-desc">Immersive 2D and 3D games with engaging mechanics, rich graphics, and seamless performance across all platforms.</p>
+            <a href="/services/game-development" className="hs-arrow-btn" aria-label="Learn more about Game Development">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>

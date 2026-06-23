@@ -1,7 +1,7 @@
 
 export default function StatsSection() {
   return (
-    <section className="glass-panel stats-bar-panel anim-slide-up delay-200">
+    <section className="glass-panel stats-bar-panel anim-3d-reveal delay-200">
         <div className="stats-bar-header">
           Trusted by Businesses Worldwide
         </div>

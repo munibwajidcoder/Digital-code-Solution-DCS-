@@ -62,16 +62,16 @@ export default function ArchSection() {
 
       <div className="arch-container">
         <div className="arch-header">
-          <span className="arch-eyebrow">
+          <span className="arch-eyebrow anim-3d-slide-left">
             <span className="arch-eyebrow-dot" />
             ARCHITECTURE
             <span className="arch-eyebrow-dot" />
           </span>
-          <h2 className="arch-heading">
+          <h2 className="arch-heading anim-3d-slide-left delay-100">
             Architecture of Digital{' '}
             <span className="arch-heading-gradient">Transformation</span>
           </h2>
-          <p className="arch-subheading">
+          <p className="arch-subheading anim-3d-slide-right delay-200">
             We design scalable digital ecosystems that help businesses innovate, automate, and grow
             with confidence through modern technologies and intelligent solutions.
           </p>
@@ -79,7 +79,7 @@ export default function ArchSection() {
 
         <div className="arch-body">
           <div className="arch-image-col">
-            <div className="arch-image-frame-wrapper">
+            <div className="arch-image-frame-wrapper anim-3d-tilt-reveal delay-300">
               <div className="arch-image-glow" />
               <div className="arch-image-border" />
               <div className="arch-image-overlay" />
@@ -134,7 +134,7 @@ export default function ArchSection() {
                     )}
                     {i === 2 && (
                       <div className="arch-image-badge" style={{ top: 'auto', bottom: '20px' }}>
-                        <div className="arch-badge-pulse" style={{ background: '#00e5ff', boxShadow: '0 0 10px #00e5ff' }} />
+                        <div className="arch-badge-pulse" style={{ background: '#a855f7', boxShadow: '0 0 10px #a855f7' }} />
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                           <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
                         </svg>
@@ -166,12 +166,12 @@ export default function ArchSection() {
 
           <div className="arch-content-col">
             <div className="arch-content-inner">
-              <h3 className="arch-content-title">
+              <h3 className="arch-content-title anim-3d-slide-left delay-100">
                 Architecting the Future of{' '}
                 <span className="arch-content-title-accent">Digital Innovation</span>
               </h3>
 
-              <div className="arch-content-body">
+              <div className="arch-content-body anim-3d-slide-right delay-200">
                 <p>
                   At DCS, we don&apos;t just build software — we architect entire digital ecosystems. Every
                   solution we create is engineered from the ground up with scalability, performance, and
@@ -187,7 +187,7 @@ export default function ArchSection() {
                   { icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>, title: "Long-Term Maintainability", desc: "Clean, documented code that your team can own and extend with ease." },
                 ].map((f, i) => (
                   <div
-                    className={`arch-feature-row${activeIndex === i ? ' arch-feature-row--active' : ''}`}
+                    className={`arch-feature-row${activeIndex === i ? ' arch-feature-row--active' : ''} anim-3d-slide-right delay-${(i + 3) * 100}`}
                     key={i}
                   >
                     <div className="arch-feature-icon">
@@ -203,7 +203,7 @@ export default function ArchSection() {
                 ))}
               </div>
 
-              <a href="/contact" className="arch-cta-btn">
+              <a href="/contact" className="arch-cta-btn anim-3d-slide-right delay-700">
                 <span className="arch-cta-btn-text">Start Your Digital Journey</span>
                 <span className="arch-cta-btn-icon">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

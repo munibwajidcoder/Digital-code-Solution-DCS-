@@ -57,21 +57,21 @@ export default function HeroSection() {
         </div>
 
         <div className="hero-content">
-          <div className="badge-pill-purple anim-slide-up delay-100">
-            <span style={{ color: "#00e5ff" }}>✦</span> We Build Digital Experiences
+          <div className="badge-pill-purple anim-3d-reveal delay-100">
+            <span style={{ color: "#a855f7" }}>✦</span> We Build Digital Experiences
           </div>
 
-          <h1 className="hero-heading anim-slide-up delay-200">
+          <h1 className="hero-heading anim-3d-reveal delay-200">
             We Build Modern <br />
             Websites, Apps &amp; <br />
             <span className="text-accent-gradient">Digital Products</span>
           </h1>
 
-          <p className="hero-description anim-slide-up delay-300">
+          <p className="hero-description anim-3d-reveal delay-300">
             Helping businesses grow through premium design, scalable development, AI-powered solutions, and modern digital experiences.
           </p>
 
-          <div className="hero-cta-buttons anim-slide-up delay-400">
+          <div className="hero-cta-buttons anim-3d-reveal delay-400">
             <button className="btn-primary">
               Get Started
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -88,7 +88,7 @@ export default function HeroSection() {
             </button>
           </div>
 
-          <div className="hero-social-proof anim-slide-up delay-500">
+          <div className="hero-social-proof anim-3d-reveal delay-500">
             <div className="avatar-stack">
               <Image src="/images/avatar1.png" alt="Client 1" width={42} height={42} className="avatar-stack-item" />
               <Image src="/images/avatar2.png" alt="Client 2" width={42} height={42} className="avatar-stack-item" />
@@ -110,7 +110,7 @@ export default function HeroSection() {
         </div>
 
         {/* 3D Robot Showcase */}
-        <div className="pedestal-3d anim-scale-in delay-300">
+        <div className="pedestal-3d anim-3d-reveal delay-300">
           <div className="hero-robot-backdrop" aria-hidden="true" />
           <HeroRobot3D />
         </div>

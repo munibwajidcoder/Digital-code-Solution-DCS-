@@ -3,7 +3,7 @@ import { NAV_LINKS } from "../../constants/navigation";
 export default function Navbar({ activePath = "/" }) {
   return (
     <div className="nav-pill-outer">
-      <header className="nav-container anim-fade-in">
+      <header className="nav-container anim-3d-reveal">
         <a href="/" className="logo-brand">
           <div className="logo-img-wrap">
             <img src="/images/logo.png" alt="DCS Logo" className="logo-img" />

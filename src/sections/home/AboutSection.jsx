@@ -8,24 +8,24 @@ export default function AboutSection() {
         <div className="about-bg-glow" />
 
         <div className="about-content-left">
-          <div className="badge-pill-cyan anim-slide-up delay-100">
+          <div className="badge-pill-purple anim-3d-reveal delay-100">
             👤 About Digital Code Solution
           </div>
 
-          <h2 className="about-heading anim-slide-up delay-200">
+          <h2 className="about-heading anim-3d-reveal delay-200">
             Building <span className="text-accent-gradient">Digital Experiences</span> <br />
             That Inspire Innovation
           </h2>
 
-          <p className="about-paragraph anim-slide-up delay-300">
+          <p className="about-paragraph anim-3d-reveal delay-300">
             At Digital Code Solution (DCS), we transform ambitious ideas into powerful digital products. From modern websites and scalable mobile applications to AI-powered solutions and intuitive user experiences, our mission is to help businesses grow through technology, creativity, and innovation.
           </p>
 
-          <p className="about-paragraph anim-slide-up delay-400" style={{ marginTop: "-8px" }}>
+          <p className="about-paragraph anim-3d-reveal delay-400" style={{ marginTop: "-8px" }}>
             Our team combines strategic thinking, premium design, and clean development practices to deliver future-ready solutions that create lasting impact.
           </p>
 
-          <div className="about-cards-row anim-slide-up delay-300">
+          <div className="about-cards-row anim-3d-reveal delay-300">
             <div className="about-card">
               <div className="about-card-icon">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -41,7 +41,7 @@ export default function AboutSection() {
             </div>
 
             <div className="about-card">
-              <div className="about-card-icon" style={{ background: "linear-gradient(135deg, #00e5ff 0%, #00a8cc 100%)", boxShadow: "0 4px 15px rgba(0, 229, 255, 0.3)" }}>
+              <div className="about-card-icon" style={{ background: "linear-gradient(135deg, var(--purple-glow) 0%, var(--purple-primary) 100%)", boxShadow: "0 4px 15px rgba(168, 85, 247, 0.3)" }}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                   <circle cx="12" cy="12" r="3"></circle>
@@ -54,7 +54,7 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className="about-features-grid anim-slide-up delay-400">
+          <div className="about-features-grid anim-3d-reveal delay-400">
             <div className="feature-tag-item">
               <div className="feature-icon-pill">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -107,7 +107,7 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className="about-cta-row anim-slide-up delay-500">
+          <div className="about-cta-row anim-3d-reveal delay-500">
             <button className="btn-primary">
               Meet Our Team
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -126,14 +126,14 @@ export default function AboutSection() {
         </div>
 
         {/* Right side visual and metrics */}
-        <div className="about-visual-column anim-slide-right delay-200">
+        <div className="about-visual-column anim-3d-reveal delay-200">
           <div className="visual-image-wrapper">
             <Image src="/images/control_room.png" alt="DCS Server Room Control Room" fill sizes="(max-width: 768px) 100vw, 50vw" priority />
             <div className="visual-image-overlay" />
           </div>
 
           <div className="about-metrics-bar">
-            <div className="metric-pill-card anim-scale-in delay-300">
+            <div className="metric-pill-card anim-3d-reveal delay-300">
               <div className="metric-badge-icon">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
@@ -144,8 +144,8 @@ export default function AboutSection() {
               <div className="metric-pill-label">Projects Delivered</div>
             </div>
 
-            <div className="metric-pill-card anim-scale-in delay-400">
-              <div className="metric-badge-icon" style={{ background: "rgba(0, 229, 255, 0.12)", borderColor: "rgba(0, 229, 255, 0.25)", color: "var(--cyan-accent)" }}>
+            <div className="metric-pill-card anim-3d-reveal delay-400">
+              <div className="metric-badge-icon" style={{ background: "rgba(168, 85, 247, 0.12)", borderColor: "rgba(168, 85, 247, 0.25)", color: "var(--purple-glow)" }}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                   <circle cx="9" cy="7" r="4"></circle>
@@ -157,7 +157,7 @@ export default function AboutSection() {
               <div className="metric-pill-label">Happy Clients</div>
             </div>
 
-            <div className="metric-pill-card anim-scale-in delay-500">
+            <div className="metric-pill-card anim-3d-reveal delay-500">
               <div className="metric-badge-icon">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="8" r="7"></circle>
@@ -169,7 +169,7 @@ export default function AboutSection() {
             </div>
           </div>
 
-          <div className="team-pill-card anim-slide-up delay-600">
+          <div className="team-pill-card anim-3d-reveal delay-600">
             <div className="team-avatars-info">
               <div className="avatar-stack">
                 <Image src="/images/avatar1.png" alt="Team 1" width={42} height={42} className="avatar-stack-item" />
