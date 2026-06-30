@@ -417,33 +417,7 @@ export default function GameDevPageClient() {
         </div>
       </section>
 
-      {/* ── 2. TRUST STATS STRIP BANNER ── */}
-      <section className="stats-strip-bar" aria-label="Game studio achievements" style={{ borderTop: "1px solid rgba(255,255,255,0.05)", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
-        <div className="svc-container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "20px 24px" }}>
-          <div className="svc-stats-bar" style={{ flexWrap: "wrap", justifyContent: "space-between", gap: "24px" }}>
-            <div className="svc-stat-item">
-              <span className="svc-stat-num">50+</span>
-              <span className="svc-stat-lbl">Games Launched</span>
-            </div>
-            <div className="svc-stat-item">
-              <span className="svc-stat-num">15+</span>
-              <span className="svc-stat-lbl">Countries Reached</span>
-            </div>
-            <div className="svc-stat-item">
-              <span className="svc-stat-num">98%</span>
-              <span className="svc-stat-lbl">Client Rating</span>
-            </div>
-            <div className="svc-stat-item">
-              <span className="svc-stat-num">4+ Years</span>
-              <span className="svc-stat-lbl">Studio Experience</span>
-            </div>
-            <div className="svc-stat-item">
-              <span className="svc-stat-num">100%</span>
-              <span className="svc-stat-lbl">On-Time Delivery</span>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* ── 3. SERVICES GRID SECTION (WHAT WE CREATE) ── */}
       <section className="svc-grid-section" id="solutions" aria-label="Game Solutions">

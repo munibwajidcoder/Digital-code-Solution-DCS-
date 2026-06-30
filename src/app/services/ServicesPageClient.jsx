@@ -15,8 +15,8 @@ const TECH_ITEMS = [
   { name: "MySQL", img: "https://cdn.simpleicons.org/mysql/4479A1" },
   { name: "MongoDB", img: "https://cdn.simpleicons.org/mongodb/47A248" },
   { name: "Python", img: "https://cdn.simpleicons.org/python/3776AB" },
-  { name: "Oracle", img: "https://cdn.simpleicons.org/oracle/F80000" },
-  { name: "Adobe XD", img: "https://cdn.simpleicons.org/adobexd/FF61F6" },
+  { name: "Oracle", img: "/images/oracle_icon.svg" },
+  { name: "Adobe XD", img: "/images/adobexd_icon.svg" },
   { name: "HTML5", img: "https://cdn.simpleicons.org/html5/E34F26" },
   { name: "JS", img: "https://cdn.simpleicons.org/javascript/F7DF1E" }
 ];
@@ -113,60 +113,6 @@ export default function ServicesPageClient() {
               </svg>
             </a>
           </div>
-
-          {/* Stats Bar */}
-          <div className="svc-stats-bar anim-3d-reveal delay-500">
-            <div className="svc-stat-item">
-              <div className="svc-stat-icon-wrap">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                </svg>
-              </div>
-              <div>
-                <div className="svc-stat-num">150+</div>
-                <div className="svc-stat-lbl">Projects Completed</div>
-              </div>
-            </div>
-
-            <div className="svc-stat-item">
-              <div className="svc-stat-icon-wrap">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
-                </svg>
-              </div>
-              <div>
-                <div className="svc-stat-num">98%</div>
-                <div className="svc-stat-lbl">Client Satisfaction</div>
-              </div>
-            </div>
-
-            <div className="svc-stat-item">
-              <div className="svc-stat-icon-wrap">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                  <line x1="16" y1="2" x2="16" y2="6"></line>
-                  <line x1="8" y1="2" x2="8" y2="6"></line>
-                  <line x1="3" y1="10" x2="21" y2="10"></line>
-                </svg>
-              </div>
-              <div>
-                <div className="svc-stat-num">4+</div>
-                <div className="svc-stat-lbl">Years Experience</div>
-              </div>
-            </div>
-
-            <div className="svc-stat-item">
-              <div className="svc-stat-icon-wrap">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                </svg>
-              </div>
-              <div>
-                <div className="svc-stat-num">24/7</div>
-                <div className="svc-stat-lbl">Support Available</div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -214,7 +160,7 @@ export default function ServicesPageClient() {
                 <li><span className="svc-card-list-bullet">◈</span> Custom Web Applications</li>
                 <li><span className="svc-card-list-bullet">◈</span> CMS Development (WordPress)</li>
                 <li><span className="svc-card-list-bullet">◈</span> Landing Pages</li>
-                <li><span className="svc-card-list-bullet">◈</span> Custom Hyperion Reports</li>
+                <li><span className="svc-card-list-bullet">◈</span> Custom Web API Integrations</li>
                 <li><span className="svc-card-list-bullet">◈</span> SEO Optimized Architecture</li>
               </ul>
               <div className="svc-tags-row">
@@ -316,7 +262,7 @@ export default function ServicesPageClient() {
               </a>
             </div>
 
-            {/* Card 4 — Hyperion Dev */}
+            {/* Card 4 — AI Chatbot Dev */}
             <div
               ref={(el) => (cardRefs.current[3] = el)}
               onMouseMove={(e) => handleMouseMove(e, 3)}
@@ -326,28 +272,28 @@ export default function ServicesPageClient() {
               <div className="svc-card-glow" />
               <div className="svc-card-icon-wrap">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                 </svg>
               </div>
-              <div className="svc-card-badge">Enterprise</div>
-              <h3 className="svc-card-title">Hyperion Development</h3>
+              <div className="svc-card-badge">Smart AI</div>
+              <h3 className="svc-card-title">AI Chatbot Development</h3>
               <p className="svc-card-desc">
-                We deliver enterprise-grade Hyperion solutions for financial reporting, planning, and business intelligence that scale with you.
+                We design and deploy smart LLM-powered AI chatbots and virtual assistants that automate customer support, capture leads, and engage users 24/7.
               </p>
               <ul className="svc-card-list">
-                <li><span className="svc-card-list-bullet">◈</span> Hyperion Financial Management (HFM)</li>
-                <li><span className="svc-card-list-bullet">◈</span> Hyperion Planning & Budgeting</li>
-                <li><span className="svc-card-list-bullet">◈</span> Oracle EPM Cloud Solutions</li>
-                <li><span className="svc-card-list-bullet">◈</span> Data Integration & Migration</li>
-                <li><span className="svc-card-list-bullet">◈</span> Custom Hyperion Reports</li>
-                <li><span className="svc-card-list-bullet">◈</span> Hyperion System Maintenance</li>
+                <li><span className="svc-card-list-bullet">◈</span> Custom LLM Chatbots (GPT/Claude)</li>
+                <li><span className="svc-card-list-bullet">◈</span> Customer Support Automation</li>
+                <li><span className="svc-card-list-bullet">◈</span> Conversational AI Integration</li>
+                <li><span className="svc-card-list-bullet">◈</span> Lead Generation & CRM Sync</li>
+                <li><span className="svc-card-list-bullet">◈</span> WhatsApp & Social Media Bots</li>
+                <li><span className="svc-card-list-bullet">◈</span> NLP & Sentiment Analysis</li>
               </ul>
               <div className="svc-tags-row">
-                {["Oracle", "Hyperion", "FDMEE", "HFM", "SmartView"].map((t) => (
+                {["OpenAI", "Python", "LLM", "NLP", "LangChain"].map((t) => (
                   <span key={t} className="svc-tag">{t}</span>
                 ))}
               </div>
-              <a href="/portfolio" className="svc-card-cta">
+              <a href="/services/ai-chatbot" className="svc-card-cta">
                 Learn More
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -607,9 +553,9 @@ export default function ServicesPageClient() {
                 &quot;Digital Code Solution built our website and the experience was outstanding. Highly professional team and excellent support!&quot;
               </p>
               <div className="svc-testi-author">
-                <img src="/images/avatar1.png" alt="Zeeshan Ahmed" className="svc-testi-avatar" style={{ objectFit: "cover" }} />
+                <img src="/images/avatar1.png" alt="Alex Stone" className="svc-testi-avatar" style={{ objectFit: "cover" }} />
                 <div>
-                  <span className="svc-testi-name">Zeeshan Ahmed</span>
+                  <span className="svc-testi-name">Alex Stone</span>
                   <span className="svc-testi-role">CEO, TechVision Ltd.</span>
                 </div>
               </div>
@@ -621,9 +567,9 @@ export default function ServicesPageClient() {
                 &quot;Their app development service using Flutter is top-notch. Delivered on time with perfect quality. Highly recommended!&quot;
               </p>
               <div className="svc-testi-author">
-                <img src="/images/avatar2.png" alt="Ayesha Khan" className="svc-testi-avatar" style={{ objectFit: "cover" }} />
+                <img src="/images/avatar2.png" alt="Sarah Jenkins" className="svc-testi-avatar" style={{ objectFit: "cover" }} />
                 <div>
-                  <span className="svc-testi-name">Ayesha Khan</span>
+                  <span className="svc-testi-name">Sarah Jenkins</span>
                   <span className="svc-testi-role">Founder, ShopCart</span>
                 </div>
               </div>
@@ -635,9 +581,9 @@ export default function ServicesPageClient() {
                 &quot;Amazing game development experience! The team understood our vision and turned it into an addictive game.&quot;
               </p>
               <div className="svc-testi-author">
-                <img src="/images/avatar3.png" alt="Usman Ali" className="svc-testi-avatar" style={{ objectFit: "cover" }} />
+                <img src="/images/avatar3.png" alt="Marcus Vance" className="svc-testi-avatar" style={{ objectFit: "cover" }} />
                 <div>
-                  <span className="svc-testi-name">Usman Ali</span>
+                  <span className="svc-testi-name">Marcus Vance</span>
                   <span className="svc-testi-role">Game Studio Owner</span>
                 </div>
               </div>
@@ -646,83 +592,7 @@ export default function ServicesPageClient() {
         </div>
       </section>
 
-      {/* ── FLEXIBLE PLANS ── */}
-      <section className="svc-pricing-section" id="pricing" aria-label="Flexible pricing plans">
-        <div className="svc-section-header">
-          <div className="port-eyebrow anim-3d-reveal">
-            <span className="port-eyebrow-dot" />
-            FLEXIBLE PLANS
-            <span className="port-eyebrow-dot" />
-          </div>
-          <h2 className="svc-heading anim-3d-reveal delay-100">
-            Flexible Plans for <span className="svc-heading-gradient">Every Budget</span>
-          </h2>
-        </div>
 
-        <div className="svc-container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 24px" }}>
-          <div className="svc-pricing-grid">
-            {/* Plan 1 */}
-            <div className="svc-price-card anim-3d-reveal delay-100">
-              <span className="svc-price-title">Basic Plan</span>
-              <div className="svc-price-amt">
-                <span className="svc-price-val">$199</span>
-                <span className="svc-price-period">/ Project</span>
-              </div>
-              <ul className="svc-price-list">
-                <li><span className="svc-price-check">✓</span> Basic Website (Up to 5 Pages)</li>
-                <li><span className="svc-price-check">✓</span> Responsive Design</li>
-                <li><span className="svc-price-check">✓</span> Basic SEO Optimization</li>
-                <li><span className="svc-price-check">✓</span> 1 Month Support</li>
-              </ul>
-              <a href="/contact" className="svc-price-btn svc-price-btn-solid">Get Started</a>
-            </div>
-
-            {/* Plan 2 */}
-            <div className="svc-price-card svc-price-card-popular anim-3d-reveal delay-200">
-              <span className="svc-price-badge">Most Popular</span>
-              <span className="svc-price-title" style={{ marginTop: "10px" }}>Standard Plan</span>
-              <div className="svc-price-amt">
-                <span className="svc-price-val">$499</span>
-                <span className="svc-price-period">/ Project</span>
-              </div>
-              <ul className="svc-price-list">
-                <li><span className="svc-price-check">✓</span> Custom Website (Up to 15 Pages)</li>
-                <li><span className="svc-price-check">✓</span> Advanced Features</li>
-                <li><span className="svc-price-check">✓</span> SEO & Speed Optimization</li>
-                <li><span className="svc-price-check">✓</span> 3 Months Support</li>
-              </ul>
-              <a href="/contact" className="svc-price-btn svc-price-btn-solid" style={{ boxShadow: "0 8px 30px rgba(122, 34, 255, 0.45)" }}>Get Started</a>
-            </div>
-
-            {/* Plan 3 */}
-            <div className="svc-price-card anim-3d-reveal delay-300">
-              <span className="svc-price-title">Premium Plan</span>
-              <div className="svc-price-amt">
-                <span className="svc-price-val">$999</span>
-                <span className="svc-price-period">/ Project</span>
-              </div>
-              <ul className="svc-price-list">
-                <li><span className="svc-price-check">✓</span> Custom Web Application</li>
-                <li><span className="svc-price-check">✓</span> Advanced Features</li>
-                <li><span className="svc-price-check">✓</span> SEO, Speed & Security</li>
-                <li><span className="svc-price-check">✓</span> 6 Months Support</li>
-              </ul>
-              <a href="/contact" className="svc-price-btn svc-price-btn-solid">Get Started</a>
-            </div>
-
-            {/* Custom Solution Card */}
-            <div className="svc-price-card svc-price-custom-card anim-3d-reveal delay-400">
-              <span className="svc-price-custom-title">Need a custom solution for your business?</span>
-              <p className="svc-price-custom-desc">
-                Let&apos;s discuss your project and build something amazing together!
-              </p>
-              <a href="/contact" className="svc-price-btn svc-price-btn-outline" style={{ marginTop: "auto", width: "100%" }}>
-                Get a Free Quote →
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ── CONTACT SECTION ── */}
       <section className="contact-section" id="contact" aria-label="Contact us">
@@ -905,7 +775,7 @@ export default function ServicesPageClient() {
                 <li><a href="/services">Web Development</a></li>
                 <li><a href="/services">App Development</a></li>
                 <li><a href="/services/game-development">Game Development</a></li>
-                <li><a href="/services">Hyperion Development</a></li>
+                <li><a href="/services/ai-chatbot">AI Chatbot Development</a></li>
                 <li><a href="/services/ui-ux-design">UI/UX Design</a></li>
                 <li><a href="/services/graphic-design">Graphic Design</a></li>
               </ul>

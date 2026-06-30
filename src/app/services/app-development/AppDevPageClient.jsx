@@ -88,19 +88,22 @@ export default function AppDevPageClient() {
           <div className="svc-hero-grid" />
         </div>
 
-        <div className="svc-hero-content app-dev-hero-layout">
-          {/* Centered Hero info */}
-          <div className="app-dev-hero-left">
-            <div className="badge-pill-purple anim-3d-reveal delay-100" style={{ margin: "0 auto 16px" }}>
+        <div className="svc-hero-content ai-hero-layout" style={{ maxWidth: "1350px" }}>
+          {/* Left Hero info column */}
+          <div className="ai-hero-left">
+            <div className="badge-pill-purple anim-3d-reveal delay-100" style={{ margin: "0 0 16px 0" }}>
               <span style={{ color: "#a855f7" }}>✦</span> Mobile App Development
             </div>
 
-            <h1 className="svc-hero-heading anim-3d-reveal delay-200" style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)", textAlign: "center" }}>
-              BUILT FOR THE FUTURE <br />
+            <div className="anim-3d-reveal delay-150" style={{ fontSize: "0.9rem", fontWeight: "700", letterSpacing: "0.08em", color: "var(--purple-glow)", textTransform: "uppercase", marginBottom: "8px" }}>
+              — Built for the Future
+            </div>
+
+            <h1 className="svc-hero-heading anim-3d-reveal delay-200" style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)", textAlign: "left", lineHeight: "1.15" }}>
               WE BUILD <span className="text-gradient-purple">APPS THAT PEOPLE</span> CAN'T STOP USING
             </h1>
 
-            <div className="app-dev-hero-bullets anim-3d-reveal delay-300" style={{ width: "100%", justifyContent: "center" }}>
+            <div className="app-dev-hero-bullets anim-3d-reveal delay-300" style={{ flexWrap: "wrap", gap: "8px" }}>
               <span>iOS</span> <span className="bullet-dot">•</span> 
               <span>Android</span> <span className="bullet-dot">•</span> 
               <span>Cross-Platform</span> <span className="bullet-dot">•</span> 
@@ -108,11 +111,11 @@ export default function AppDevPageClient() {
               <span>React Native</span>
             </div>
 
-            <p className="svc-hero-desc anim-3d-reveal delay-300" style={{ maxWidth: "580px", margin: "0 auto 24px", textAlign: "center" }}>
+            <p className="svc-hero-desc anim-3d-reveal delay-300">
               From MVP to enterprise-grade applications — we design and develop mobile apps that deliver exceptional user experiences and real business results.
             </p>
 
-            <div className="svc-hero-buttons anim-3d-reveal delay-400" style={{ justifyContent: "center" }}>
+            <div className="svc-hero-buttons anim-3d-reveal delay-400">
               <a href="#contact" className="btn-primary">
                 Start Your App Project
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -128,56 +131,94 @@ export default function AppDevPageClient() {
                 </svg>
               </a>
             </div>
+          </div>
 
-            {/* Stats Bar */}
-            <div className="svc-stats-bar anim-3d-reveal delay-500" style={{ marginTop: "40px", width: "100%" }}>
-              <div className="svc-stat-item">
-                <div className="svc-stat-icon-wrap">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                    <line x1="22" y1="10" x2="2" y2="10"></line>
-                    <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"></polygon>
-                  </svg>
-                </div>
-                <div>
-                  <div className="svc-stat-num">50+</div>
-                  <div className="svc-stat-lbl">Apps Launched</div>
+          {/* Right Showcase image and floating stats */}
+          <div className="ai-hero-right anim-3d-reveal delay-300" style={{ position: "relative", display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <div style={{ position: "relative", width: "100%", maxWidth: "560px" }}>
+              {/* Main Showcase Image */}
+              <img 
+                src="/images/svc_mobile_app.png" 
+                alt="Mobile App Showcase" 
+                style={{ 
+                  width: "100%", 
+                  height: "auto", 
+                  objectFit: "contain",
+                  filter: "drop-shadow(0 15px 35px rgba(122, 34, 255, 0.25))"
+                }} 
+              />
+              
+              {/* Floating Badges */}
+              {/* Badge 1: App Store Rating */}
+              <div className="hero-glass-card-2" style={{ top: "18%", right: "-25px", position: "absolute", width: "155px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                  <div style={{ 
+                    width: "36px", 
+                    height: "36px", 
+                    borderRadius: "50%", 
+                    background: "rgba(168, 85, 247, 0.15)", 
+                    border: "1px solid rgba(168, 85, 247, 0.3)", 
+                    display: "flex", 
+                    alignItems: "center", 
+                    justifyContent: "center" 
+                  }}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#eab308" stroke="#eab308" strokeWidth="2">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="hero-glass-value" style={{ fontSize: "1.05rem", lineHeight: "1.2" }}>4.9</div>
+                    <div className="hero-glass-label" style={{ margin: 0, fontSize: "0.65rem" }}>App Store Rating</div>
+                  </div>
                 </div>
               </div>
 
-              <div className="svc-stat-item">
-                <div className="svc-stat-icon-wrap">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <div className="svc-stat-num">1M+</div>
-                  <div className="svc-stat-lbl">Downloads Achieved</div>
+              {/* Badge 2: Apps Launched */}
+              <div className="hero-glass-card-1" style={{ top: "48%", right: "-45px", position: "absolute", left: "auto", bottom: "auto", width: "155px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                  <div style={{ 
+                    width: "36px", 
+                    height: "36px", 
+                    borderRadius: "50%", 
+                    background: "rgba(168, 85, 247, 0.15)", 
+                    border: "1px solid rgba(168, 85, 247, 0.3)", 
+                    display: "flex", 
+                    alignItems: "center", 
+                    justifyContent: "center" 
+                  }}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a855f7" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polygon points="12 2 2 22 12 17 22 22 12 2"></polygon>
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="hero-glass-value" style={{ fontSize: "1.05rem", lineHeight: "1.2" }}>50+</div>
+                    <div className="hero-glass-label" style={{ margin: 0, fontSize: "0.65rem" }}>Apps Launched</div>
+                  </div>
                 </div>
               </div>
 
-              <div className="svc-stat-item">
-                <div className="svc-stat-icon-wrap">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <div className="svc-stat-num">98%</div>
-                  <div className="svc-stat-lbl">Client Rating</div>
-                </div>
-              </div>
-
-              <div className="svc-stat-item">
-                <div className="svc-stat-icon-wrap">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
-                  </svg>
-                </div>
-                <div>
-                  <div className="svc-stat-num">5+</div>
-                  <div className="svc-stat-lbl">Years Experience</div>
+              {/* Badge 3: Platforms */}
+              <div className="hero-glass-card-2" style={{ top: "78%", right: "-25px", position: "absolute", bottom: "auto", width: "155px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                  <div style={{ 
+                    width: "36px", 
+                    height: "36px", 
+                    borderRadius: "50%", 
+                    background: "rgba(168, 85, 247, 0.15)", 
+                    border: "1px solid rgba(168, 85, 247, 0.3)", 
+                    display: "flex", 
+                    alignItems: "center", 
+                    justifyContent: "center" 
+                  }}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a855f7" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                      <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="hero-glass-value" style={{ fontSize: "1rem", lineHeight: "1.2" }}>iOS & Android</div>
+                    <div className="hero-glass-label" style={{ margin: 0, fontSize: "0.65rem" }}>Mobile Platforms</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -202,7 +243,7 @@ export default function AppDevPageClient() {
         </div>
 
         <div className="svc-container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 24px" }}>
-          <div className="svc-cards-grid">
+          <div className="svc-cards-grid" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
             {/* Card 1: iOS App Development */}
             <div
               ref={(el) => (cardRefs.current[0] = el)}
@@ -262,10 +303,7 @@ export default function AppDevPageClient() {
             >
               <div className="svc-card-glow" />
               <div className="svc-card-icon-wrap svc-icon-purple">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="16 18 22 12 16 6"></polyline>
-                  <polyline points="8 6 2 12 8 18"></polyline>
-                </svg>
+                <img src="https://cdn.simpleicons.org/flutter/02569B" alt="Flutter" style={{ width: "24px", height: "24px", objectFit: "contain" }} />
               </div>
               <h3 className="svc-card-title">Flutter App Development</h3>
               <p className="svc-card-desc">Beautiful cross-platform apps from a single codebase — iOS + Android, faster and cost-effective.</p>
@@ -303,38 +341,12 @@ export default function AppDevPageClient() {
               </a>
             </div>
 
-            {/* Card 5: E-Commerce Apps */}
+            {/* Card 5: On-Demand Apps */}
             <div
               ref={(el) => (cardRefs.current[4] = el)}
               onMouseMove={(e) => handleMouseMove(e, 4)}
               onMouseLeave={() => handleMouseLeave(4)}
               className="svc-card anim-3d-reveal delay-100"
-            >
-              <div className="svc-card-glow" />
-              <div className="svc-card-icon-wrap svc-icon-purple">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="9" cy="21" r="1"></circle>
-                  <circle cx="20" cy="21" r="1"></circle>
-                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                </svg>
-              </div>
-              <h3 className="svc-card-title">E-Commerce Apps</h3>
-              <p className="svc-card-desc">Feature-rich shopping apps with real-time inventory, secure payments, and seamless checkout flows.</p>
-              <a href="#contact" className="svc-card-cta">
-                Learn More
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </a>
-            </div>
-
-            {/* Card 6: On-Demand Apps */}
-            <div
-              ref={(el) => (cardRefs.current[5] = el)}
-              onMouseMove={(e) => handleMouseMove(e, 5)}
-              onMouseLeave={() => handleMouseLeave(5)}
-              className="svc-card anim-3d-reveal delay-200"
             >
               <div className="svc-card-glow" />
               <div className="svc-card-icon-wrap svc-icon-purple">
@@ -353,37 +365,12 @@ export default function AppDevPageClient() {
               </a>
             </div>
 
-            {/* Card 7: Enterprise Apps */}
+            {/* Card 6: Custom App Solutions */}
             <div
-              ref={(el) => (cardRefs.current[6] = el)}
-              onMouseMove={(e) => handleMouseMove(e, 6)}
-              onMouseLeave={() => handleMouseLeave(6)}
-              className="svc-card anim-3d-reveal delay-300"
-            >
-              <div className="svc-card-glow" />
-              <div className="svc-card-icon-wrap svc-icon-purple">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                  <line x1="9" y1="3" x2="9" y2="21"></line>
-                </svg>
-              </div>
-              <h3 className="svc-card-title">Enterprise Apps</h3>
-              <p className="svc-card-desc">Scalable internal business tools, dashboards, and workflow automation apps for large organizations.</p>
-              <a href="#contact" className="svc-card-cta">
-                Learn More
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </a>
-            </div>
-
-            {/* Card 8: Custom App Solutions */}
-            <div
-              ref={(el) => (cardRefs.current[7] = el)}
-              onMouseMove={(e) => handleMouseMove(e, 7)}
-              onMouseLeave={() => handleMouseLeave(7)}
-              className="svc-card anim-3d-reveal delay-400"
+              ref={(el) => (cardRefs.current[5] = el)}
+              onMouseMove={(e) => handleMouseMove(e, 5)}
+              onMouseLeave={() => handleMouseLeave(5)}
+              className="svc-card anim-3d-reveal delay-200"
             >
               <div className="svc-card-glow" />
               <div className="svc-card-icon-wrap svc-icon-purple">

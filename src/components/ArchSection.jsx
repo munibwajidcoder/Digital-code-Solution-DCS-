@@ -23,6 +23,11 @@ export default function ArchSection() {
     }, CYCLE_MS);
   }, []);
 
+  const handleFeatureClick = useCallback((index) => {
+    setActiveIndex(index);
+    startCycle();
+  }, [startCycle]);
+
   useEffect(() => {
     const el = sectionRef.current;
     if (!el) return;
@@ -187,17 +192,23 @@ export default function ArchSection() {
                   { icon: <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>, title: "Long-Term Maintainability", desc: "Clean, documented code that your team can own and extend with ease." },
                 ].map((f, i) => (
                   <div
-                    className={`arch-feature-row${activeIndex === i ? ' arch-feature-row--active' : ''} anim-3d-slide-right delay-${(i + 3) * 100}`}
                     key={i}
+                    className={`anim-3d-slide-right delay-${(i + 3) * 100}`}
+                    style={{ width: '100%' }}
                   >
-                    <div className="arch-feature-icon">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        {f.icon}
-                      </svg>
-                    </div>
-                    <div className="arch-feature-text">
-                      <span className="arch-feature-title">{f.title}</span>
-                      <span className="arch-feature-desc">{f.desc}</span>
+                    <div
+                      className={`arch-feature-row${activeIndex === i ? ' arch-feature-row--active' : ''}`}
+                      onClick={() => handleFeatureClick(i)}
+                    >
+                      <div className="arch-feature-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          {f.icon}
+                        </svg>
+                      </div>
+                      <div className="arch-feature-text">
+                        <span className="arch-feature-title">{f.title}</span>
+                        <span className="arch-feature-desc">{f.desc}</span>
+                      </div>
                     </div>
                   </div>
                 ))}

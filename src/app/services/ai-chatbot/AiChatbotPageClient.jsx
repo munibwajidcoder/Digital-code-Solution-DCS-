@@ -5,41 +5,41 @@ import ResponsiveNav from "../../../components/ResponsiveNav";
 import GlobalScrollObserver from "../../../components/GlobalScrollObserver";
 
 const TECH_AI = [
-  { name: "OpenAI GPT-4", img: "https://cdn.simpleicons.org/openai/white" },
-  { name: "Claude 3.5 Sonnet", img: "https://cdn.simpleicons.org/anthropic/white" },
-  { name: "Gemini 1.5 Pro", img: "https://cdn.simpleicons.org/google/white" },
-  { name: "LangChain", img: "https://cdn.simpleicons.org/python/white" },
+  { name: "OpenAI GPT-4", img: "/images/openai_icon.svg" },
+  { name: "Claude 3.5 Sonnet", img: "/images/anthropic_icon.svg" },
+  { name: "Gemini 1.5 Pro", img: "/images/gemini_icon.svg" },
+  { name: "LangChain", img: "/images/langchain_icon.svg" },
 ];
 
 const TECH_FRONTEND = [
-  { name: "React.js", img: "https://cdn.simpleicons.org/react/white" },
+  { name: "React.js", img: "https://cdn.simpleicons.org/react" },
   { name: "Next.js", img: "https://cdn.simpleicons.org/nextdotjs/white" },
-  { name: "TypeScript", img: "https://cdn.simpleicons.org/typescript/white" },
-  { name: "Tailwind CSS", img: "https://cdn.simpleicons.org/tailwindcss/white" },
+  { name: "TypeScript", img: "https://cdn.simpleicons.org/typescript" },
+  { name: "Tailwind CSS", img: "https://cdn.simpleicons.org/tailwindcss" },
 ];
 
 const TECH_BACKEND = [
-  { name: "Node.js", img: "https://cdn.simpleicons.org/nodedotjs/white" },
+  { name: "Node.js", img: "https://cdn.simpleicons.org/nodedotjs" },
   { name: "Express.js", img: "https://cdn.simpleicons.org/express/white" },
-  { name: "Python", img: "https://cdn.simpleicons.org/python/white" },
+  { name: "Python", img: "https://cdn.simpleicons.org/python" },
 ];
 
 const TECH_DB = [
-  { name: "MongoDB", img: "https://cdn.simpleicons.org/mongodb/white" },
-  { name: "PostgreSQL", img: "https://cdn.simpleicons.org/postgresql/white" },
-  { name: "Firebase", img: "https://cdn.simpleicons.org/firebase/white" },
+  { name: "MongoDB", img: "https://cdn.simpleicons.org/mongodb" },
+  { name: "PostgreSQL", img: "https://cdn.simpleicons.org/postgresql" },
+  { name: "Firebase", img: "https://cdn.simpleicons.org/firebase" },
 ];
 
 const TECH_INT = [
-  { name: "WhatsApp API", img: "https://cdn.simpleicons.org/whatsapp/white" },
-  { name: "CRM Connectors", img: "https://cdn.simpleicons.org/salesforce/white" },
-  { name: "Zapier & Make", img: "https://cdn.simpleicons.org/zapier/white" },
+  { name: "WhatsApp API", img: "https://cdn.simpleicons.org/whatsapp" },
+  { name: "CRM Connectors", img: "/images/salesforce_icon.svg" },
+  { name: "Zapier & Make", img: "https://cdn.simpleicons.org/zapier" },
 ];
 
 const TECH_DEP = [
-  { name: "Amazon AWS", img: "https://cdn.simpleicons.org/amazonwebservices/white" },
+  { name: "Amazon AWS", img: "/images/aws_icon.svg" },
   { name: "Vercel Host", img: "https://cdn.simpleicons.org/vercel/white" },
-  { name: "DigitalOcean", img: "https://cdn.simpleicons.org/digitalocean/white" },
+  { name: "DigitalOcean", img: "https://cdn.simpleicons.org/digitalocean" },
 ];
 
 const SIMULATED_CONVERSATION = [
@@ -171,47 +171,6 @@ export default function AiChatbotPageClient() {
                 </svg>
               </a>
             </div>
-
-            {/* Stats bar */}
-            <div className="svc-stats-bar anim-3d-reveal delay-500" style={{ marginTop: "40px" }}>
-              <div className="svc-stat-item">
-                <div className="svc-stat-icon-wrap">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <div className="svc-stat-num">24/7</div>
-                  <div className="svc-stat-lbl">Active Support</div>
-                </div>
-              </div>
-
-              <div className="svc-stat-item">
-                <div className="svc-stat-icon-wrap">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                    <line x1="22" y1="10" x2="2" y2="10"></line>
-                    <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"></polygon>
-                  </svg>
-                </div>
-                <div>
-                  <div className="svc-stat-num">70%+</div>
-                  <div className="svc-stat-lbl">Costs Reduced</div>
-                </div>
-              </div>
-
-              <div className="svc-stat-item">
-                <div className="svc-stat-icon-wrap">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
-                  </svg>
-                </div>
-                <div>
-                  <div className="svc-stat-num">&lt;2s</div>
-                  <div className="svc-stat-lbl">Response Time</div>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Right Side Visual - Futuristic Chat Interface */}
@@ -291,7 +250,7 @@ export default function AiChatbotPageClient() {
         </div>
 
         <div className="svc-container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 24px" }}>
-          <div className="svc-cards-grid">
+          <div className="svc-cards-grid" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
             {/* Card 1: Custom AI Chatbots */}
             <div
               ref={(el) => (cardRefs.current[0] = el)}
@@ -514,30 +473,6 @@ export default function AiChatbotPageClient() {
                 </svg>
               </a>
             </div>
-
-            {/* Card 10: Automation Workflows */}
-            <div
-              ref={(el) => (cardRefs.current[9] = el)}
-              onMouseMove={(e) => handleMouseMove(e, 9)}
-              onMouseLeave={() => handleMouseLeave(9)}
-              className="svc-card anim-3d-reveal delay-200"
-            >
-              <div className="svc-card-glow" />
-              <div className="svc-card-icon-wrap svc-icon-purple">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                </svg>
-              </div>
-              <h3 className="svc-card-title">Automation Workflows</h3>
-              <p className="svc-card-desc">Intelligent triggers connecting dialog flows to backend databases for automated operational growth.</p>
-              <a href="#contact" className="svc-card-cta">
-                Learn More
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </a>
-            </div>
           </div>
         </div>
       </section>
@@ -615,15 +550,17 @@ export default function AiChatbotPageClient() {
               <p className="why-card-desc">Deploy LLM-trained networks that adapt answers dynamically matching database contexts.</p>
             </div>
 
-            {/* Benefit 6 */}
+            {/* Benefit 6: Multilingual Support */}
             <div className="why-card anim-3d-reveal delay-600">
               <div className="why-icon-wrap">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: "#a855f7" }}>
-                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                 </svg>
               </div>
-              <h4 className="why-card-title">CRM Integration</h4>
-              <p className="why-card-desc">Instantly populate customer datasets directly into your Salesforce, HubSpot, or custom CRM.</p>
+              <h4 className="why-card-title">Multilingual Support</h4>
+              <p className="why-card-desc">Engage and support your global customers with automated real-time translation in 100+ languages.</p>
             </div>
 
             {/* Benefit 7 */}

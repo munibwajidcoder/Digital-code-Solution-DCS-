@@ -485,29 +485,7 @@ export default function UiUxPageClient() {
         </div>
       </section>
 
-      {/* ── 2. TRUST STATS STRIP BANNER ── */}
-      <section className="stats-strip-bar" aria-label="UI/UX achievements" style={{ borderTop: "1px solid rgba(255,255,255,0.05)", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
-        <div className="svc-container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "20px 24px" }}>
-          <div className="svc-stats-bar" style={{ flexWrap: "wrap", justifyContent: "space-between", gap: "24px" }}>
-            <div className="svc-stat-item">
-              <span className="svc-stat-num">250+</span>
-              <span className="svc-stat-lbl">Projects Designed</span>
-            </div>
-            <div className="svc-stat-item">
-              <span className="svc-stat-num">98%</span>
-              <span className="svc-stat-lbl">Client Satisfaction</span>
-            </div>
-            <div className="svc-stat-item">
-              <span className="svc-stat-num">10K+</span>
-              <span className="svc-stat-lbl">Screens Created</span>
-            </div>
-            <div className="svc-stat-item">
-              <span className="svc-stat-num">100+</span>
-              <span className="svc-stat-lbl">Successful Products</span>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* ── 3. SERVICES GRID SECTION (WHAT WE CREATE) ── */}
       <section className="svc-grid-section" id="solutions" aria-label="UI/UX Solutions">
@@ -608,7 +586,7 @@ export default function UiUxPageClient() {
         <div className="svc-container" style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 24px" }}>
           <div className="svc-tech-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(130px, 1fr))", gap: "20px", marginTop: "40px" }}>
             {TOOLS.map((tool, idx) => (
-              <div key={tool.name} className="svc-tech-box anim-3d-reveal" style={{ animationDelay: `${idx * 0.03}s`, padding: "16px 12px" }}>
+              <div key={`${tool.name}-${idx}`} className="svc-tech-box anim-3d-reveal" style={{ animationDelay: `${idx * 0.03}s`, padding: "16px 12px" }}>
                 <img src={tool.img} alt={tool.name} style={{ width: "32px", height: "32px", marginBottom: "8px", objectFit: "contain" }} />
                 <span style={{ fontSize: "0.8rem", color: "#fff", fontWeight: "600", textAlign: "center" }}>{tool.name}</span>
                 <span style={{ fontSize: "0.58rem", color: "var(--text-muted)", marginTop: "2px" }}>{tool.cat}</span>
