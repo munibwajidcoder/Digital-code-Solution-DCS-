@@ -97,13 +97,9 @@ export default function Home() {
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </button>
-            <button className="btn-outline">
-              Explore Services
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-              </svg>
-            </button>
+            <a href="#contact-section" className="btn-outline" style={{ color: "white", textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              Let's talk
+            </a>
           </div>
 
           <div className="hero-social-proof anim-3d-reveal delay-600">
@@ -362,22 +358,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="about-cta-row anim-3d-reveal delay-500">
-              <button className="btn-primary">
-                Meet Our Team
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </button>
-              <button className="btn-outline">
-                Start Your Project
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </button>
-            </div>
+            {/* Buttons removed as requested */}
           </div>
 
           {/* Right side visual and metrics */}
@@ -1006,7 +987,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════════
           CONTACT SECTION
       ═══════════════════════════════════════════════ */}
-      <section className="contact-section">
+      <section id="contact-section" className="contact-section">
         <div className="contact-bg" aria-hidden="true">
           <div className="contact-orb contact-orb-1" />
           <div className="contact-orb contact-orb-2" />

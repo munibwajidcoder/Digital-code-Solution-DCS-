@@ -78,19 +78,19 @@ const ACHIEVEMENTS = [
 
 const TEAM = [
   {
-    name: "Muhammad Talha",
+    name: "Muhammad Mohib",
     role: "CEO & Founder",
-    img: "/images/avatar1.png",
+    img: "/images/mohib_avatar.png",
     socials: [
       { type: "linkedin", url: "#" },
-      { type: "twitter", url: "#" },
+      { type: "facebook", url: "#" },
       { type: "instagram", url: "#" }
     ]
   },
   {
-    name: "Ayesha Khan",
-    role: "UI/UX Designer",
-    img: "/images/avatar2.png",
+    name: "Muhammad Burhan",
+    role: "Flutter Developer",
+    img: "/images/burhan_avatar.png",
     socials: [
       { type: "web", url: "#" },
       { type: "behance", url: "#" },
@@ -98,9 +98,9 @@ const TEAM = [
     ]
   },
   {
-    name: "Usman Ali",
+    name: "Muhammad Munib",
     role: "Full Stack Developer",
-    img: "/images/avatar3.png",
+    img: "/images/munib_avatar.png",
     socials: [
       { type: "github", url: "#" },
       { type: "linkedin", url: "#" },
@@ -237,8 +237,8 @@ export default function AboutPageClient() {
             <div className="portfolio-hero-glow-circle" style={{ position: "relative", width: "100%", maxWidth: "560px", padding: "20px" }}>
               <div className="portfolio-pedestal-ambient" style={{ position: "absolute", inset: "0", background: "radial-gradient(circle, rgba(168,85,247,0.18) 0%, transparent 70%)", borderRadius: "50%", transform: "scale(1.2)" }} />
               <img
-                src="/images/portfolio_hero_showcase.png"
-                alt="Digital Products Portfolio Showcase"
+                src="/images/about_hero_showcase.png"
+                alt="About DCS Technology Showcase"
                 style={{
                   width: "100%",
                   height: "auto",

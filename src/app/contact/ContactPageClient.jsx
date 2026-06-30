@@ -445,35 +445,51 @@ export default function ContactPageClient() {
           </p>
         </div>
 
-        <div className="svc-container" style={{ maxWidth: "1300px", margin: "0 auto", padding: "0 24px", overflowX: "auto" }}>
-          <div className="process-flow-container" style={{ display: "flex", gap: "24px", paddingBottom: "20px", minWidth: "max-content" }}>
-            {PROCESS_STEPS.map((step, idx) => (
+        <style>{`
+          @keyframes processMarqueeContact {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(calc(-50% - 12px)); }
+          }
+          .process-flow-marquee {
+            display: flex;
+            gap: 24px;
+            padding-bottom: 20px;
+            width: max-content;
+            animation: processMarqueeContact 30s linear infinite;
+          }
+          .process-flow-marquee:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+
+        <div className="svc-container" style={{ maxWidth: "1300px", margin: "0 auto", padding: "0 24px", overflow: "hidden" }}>
+          <div className="process-flow-marquee">
+            {[...PROCESS_STEPS, ...PROCESS_STEPS].map((step, idx) => (
               <div
                 key={idx}
                 className="why-card anim-3d-reveal"
                 style={{
-                  animationDelay: `${idx * 0.08}s`,
+                  animationDelay: `${(idx % PROCESS_STEPS.length) * 0.08}s`,
                   padding: "24px",
                   width: "220px",
                   display: "flex",
                   flexDirection: "column",
                   gap: "12px",
-                  position: "relative"
+                  position: "relative",
+                  flexShrink: 0
                 }}
               >
-                {/* Connector Line */}
-                {idx < PROCESS_STEPS.length - 1 && (
-                  <div style={{
-                    position: "absolute",
-                    right: "-20px",
-                    top: "50%",
-                    transform: "translateY(-50%)",
-                    width: "16px",
-                    height: "2px",
-                    background: "rgba(168,85,247,0.3)",
-                    zIndex: 0
-                  }} />
-                )}
+                {/* Connector Line always visible for seamless flow */}
+                <div style={{
+                  position: "absolute",
+                  right: "-20px",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  width: "16px",
+                  height: "2px",
+                  background: "rgba(168,85,247,0.3)",
+                  zIndex: 0
+                }} />
 
                 <span style={{ fontSize: "0.85rem", fontWeight: "800", color: "var(--purple-glow)", background: "rgba(168,85,247,0.1)", border: "1px solid rgba(168,85,247,0.2)", borderRadius: "8px", padding: "4px 8px", fontFamily: "var(--font-title)", width: "fit-content" }}>
                   {step.num}
