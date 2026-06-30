@@ -547,46 +547,52 @@ export default function ServicesPageClient() {
 
         <div className="svc-container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 24px" }}>
           <div className="svc-testi-grid">
-            <div className="svc-testi-card anim-3d-reveal delay-100">
-              <div className="svc-testi-stars">★★★★★</div>
-              <p className="svc-testi-text">
-                &quot;Digital Code Solution built our website and the experience was outstanding. Highly professional team and excellent support!&quot;
-              </p>
-              <div className="svc-testi-author">
-                <img src="/images/avatar1.png" alt="Alex Stone" className="svc-testi-avatar" style={{ objectFit: "cover" }} />
+            <div className="why-card anim-3d-reveal delay-100">
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
+                <img src="/images/sarah_avatar.png" alt="Sarah Jenkins" style={{ width: "48px", height: "48px", borderRadius: "50%", objectFit: "cover", background: "#1c1236" }} />
                 <div>
-                  <span className="svc-testi-name">Alex Stone</span>
-                  <span className="svc-testi-role">CEO, TechVision Ltd.</span>
+                  <h4 style={{ color: "#fff", fontSize: "0.98rem", fontWeight: "700", fontFamily: "var(--font-title)" }}>Sarah Jenkins</h4>
+                  <p style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}>Founder, ShopCart</p>
                 </div>
               </div>
-            </div>
-
-            <div className="svc-testi-card anim-3d-reveal delay-200">
-              <div className="svc-testi-stars">★★★★★</div>
-              <p className="svc-testi-text">
+              <div style={{ color: "var(--purple-glow)", fontSize: "0.9rem", marginBottom: "8px" }}>
+                ★★★★★
+              </div>
+              <p className="why-card-desc" style={{ fontSize: "0.88rem", fontStyle: "italic", lineHeight: "1.6" }}>
                 &quot;Their app development service using Flutter is top-notch. Delivered on time with perfect quality. Highly recommended!&quot;
               </p>
-              <div className="svc-testi-author">
-                <img src="/images/avatar2.png" alt="Sarah Jenkins" className="svc-testi-avatar" style={{ objectFit: "cover" }} />
-                <div>
-                  <span className="svc-testi-name">Sarah Jenkins</span>
-                  <span className="svc-testi-role">Founder, ShopCart</span>
-                </div>
-              </div>
             </div>
 
-            <div className="svc-testi-card anim-3d-reveal delay-300">
-              <div className="svc-testi-stars">★★★★★</div>
-              <p className="svc-testi-text">
-                &quot;Amazing game development experience! The team understood our vision and turned it into an addictive game.&quot;
-              </p>
-              <div className="svc-testi-author">
-                <img src="/images/avatar3.png" alt="Marcus Vance" className="svc-testi-avatar" style={{ objectFit: "cover" }} />
+            <div className="why-card anim-3d-reveal delay-200">
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
+                <img src="/images/evelyn_avatar.png" alt="Evelyn Thorne" style={{ width: "48px", height: "48px", borderRadius: "50%", objectFit: "cover", background: "#1c1236" }} />
                 <div>
-                  <span className="svc-testi-name">Marcus Vance</span>
-                  <span className="svc-testi-role">Game Studio Owner</span>
+                  <h4 style={{ color: "#fff", fontSize: "0.98rem", fontWeight: "700", fontFamily: "var(--font-title)" }}>Evelyn Thorne</h4>
+                  <p style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}>CEO, TechVision Ltd.</p>
                 </div>
               </div>
+              <div style={{ color: "var(--purple-glow)", fontSize: "0.9rem", marginBottom: "8px" }}>
+                ★★★★★
+              </div>
+              <p className="why-card-desc" style={{ fontSize: "0.88rem", fontStyle: "italic", lineHeight: "1.6" }}>
+                &quot;Digital Code Solution built our website and the experience was outstanding. Highly professional team and excellent support!&quot;
+              </p>
+            </div>
+
+            <div className="why-card anim-3d-reveal delay-300">
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
+                <img src="/images/marcus_avatar.png" alt="Marcus Chen" style={{ width: "48px", height: "48px", borderRadius: "50%", objectFit: "cover", background: "#1c1236" }} />
+                <div>
+                  <h4 style={{ color: "#fff", fontSize: "0.98rem", fontWeight: "700", fontFamily: "var(--font-title)" }}>Marcus Chen</h4>
+                  <p style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}>Game Studio Owner</p>
+                </div>
+              </div>
+              <div style={{ color: "var(--purple-glow)", fontSize: "0.9rem", marginBottom: "8px" }}>
+                ★★★★★
+              </div>
+              <p className="why-card-desc" style={{ fontSize: "0.88rem", fontStyle: "italic", lineHeight: "1.6" }}>
+                &quot;Amazing game development experience! The team understood our vision and turned it into an addictive game.&quot;
+              </p>
             </div>
           </div>
         </div>

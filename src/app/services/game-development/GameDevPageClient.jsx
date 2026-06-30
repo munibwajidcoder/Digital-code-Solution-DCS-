@@ -5,28 +5,28 @@ import ResponsiveNav from "../../../components/ResponsiveNav";
 import GlobalScrollObserver from "../../../components/GlobalScrollObserver";
 
 const TECH_STACK = [
-  { name: "Unity", img: "https://cdn.simpleicons.org/unity/white" },
+  { name: "Unity", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" },
   { name: "Unreal Engine", img: "https://cdn.simpleicons.org/unrealengine/white" },
-  { name: "Godot Engine", img: "https://cdn.simpleicons.org/godotengine/white" },
-  { name: "C#", img: "https://cdn.simpleicons.org/csharp/white" },
-  { name: "C++", img: "https://cdn.simpleicons.org/cplusplus/white" },
-  { name: "JavaScript", img: "https://cdn.simpleicons.org/javascript/white" },
-  { name: "TypeScript", img: "https://cdn.simpleicons.org/typescript/white" },
-  { name: "Blender", img: "https://cdn.simpleicons.org/blender/white" },
-  { name: "Maya", img: "https://cdn.simpleicons.org/autodesk/white" },
-  { name: "Adobe Photoshop", img: "https://cdn.simpleicons.org/adobephotoshop/white" },
+  { name: "Godot Engine", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg" },
+  { name: "C#", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" },
+  { name: "C++", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
+  { name: "JavaScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
+  { name: "TypeScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
+  { name: "Blender", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg" },
+  { name: "Maya", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maya/maya-original.svg" },
+  { name: "Adobe Photoshop", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" },
   { name: "Spine 2D", img: "https://cdn.simpleicons.org/spine/white" },
-  { name: "Node.js", img: "https://cdn.simpleicons.org/nodedotjs/white" },
-  { name: "Firebase", img: "https://cdn.simpleicons.org/firebase/white" },
-  { name: "PlayFab", img: "https://cdn.simpleicons.org/playfab/white" },
-  { name: "MongoDB", img: "https://cdn.simpleicons.org/mongodb/white" },
-  { name: "PostgreSQL", img: "https://cdn.simpleicons.org/postgresql/white" },
-  { name: "Amazon AWS", img: "https://cdn.simpleicons.org/amazonwebservices/white" },
-  { name: "Microsoft Azure", img: "https://cdn.simpleicons.org/microsoftazure/white" },
-  { name: "Google Cloud", img: "https://cdn.simpleicons.org/googlecloud/white" },
-  { name: "Steam", img: "https://cdn.simpleicons.org/steam/white" },
-  { name: "Google Play", img: "https://cdn.simpleicons.org/googleplay/white" },
-  { name: "App Store", img: "https://cdn.simpleicons.org/appstore/white" }
+  { name: "Node.js", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
+  { name: "Firebase", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" },
+  { name: "PlayFab", img: "https://img.icons8.com/color/48/000000/controller.png" },
+  { name: "MongoDB", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+  { name: "PostgreSQL", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
+  { name: "Amazon AWS", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+  { name: "Microsoft Azure", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" },
+  { name: "Google Cloud", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" },
+  { name: "Steam", img: "https://img.icons8.com/color/48/steam.png" },
+  { name: "Google Play", img: "https://img.icons8.com/color/48/google-play.png" },
+  { name: "App Store", img: "https://img.icons8.com/color/48/mac-os.png" }
 ];
 
 const SERVICES = [
@@ -61,11 +61,6 @@ const SERVICES = [
     tags: ["Unity Engine", "C#", "Cross-Platform"]
   },
   {
-    title: "Unreal Engine Development",
-    desc: "AAA-quality game development using Unreal Engine for photorealistic visuals and cinematic experiences.",
-    tags: ["Unreal Engine", "C++", "Blueprints"]
-  },
-  {
     title: "Game UI/UX Design",
     desc: "Modern and intuitive game interfaces that enhance gameplay immersion, menus, and HUD displays.",
     tags: ["Figma", "UI/UX", "HUD Design"]
@@ -89,7 +84,7 @@ const FEATURES = [
   { title: "Multiplayer Integration", desc: "Enable real-time player lobbies, matchmaking, and multiplayer interactions." },
   { title: "Optimized Performance", desc: "Smooth gameplay rendering at high frame rates and fast load times." },
   { title: "Custom Game Mechanics", desc: "Unique gameplay loop scripts tailored specifically to your design vision." },
-  { title: "Advanced Analytics", desc: "Track player behavior metrics, session heatmaps, and retention data." },
+
   { title: "Secure Development", desc: "Protect client game source code, assets, and player database logs." },
   { title: "Ongoing Support", desc: "Continuous live ops management, server scaling, and content updates." },
   { title: "Business Growth", desc: "Proven in-app purchase funnels and player retention loops." }
@@ -134,19 +129,22 @@ const TESTIMONIALS = [
     name: "Alex Sterling",
     role: "Studio Director, PixelForge Games",
     text: "Working with DCS was an incredible experience. They brought our multiplayer vision to life on time and under budget. Player engagement grew by 300% post-launch!",
-    stars: 5
+    stars: 5,
+    img: "/images/alex_avatar.png"
   },
   {
     name: "Riana Vance",
     role: "Founder, MobilePlay Labs",
     text: "Their optimization skills are top-notch. Our 3D mobile game loads in under 3 seconds on mid-range devices now. Highly recommended developers!",
-    stars: 5
+    stars: 5,
+    img: "/images/riana_avatar.png"
   },
   {
     name: "Dimitri Santos",
     role: "Product Owner, GameMinds",
     text: "The custom game mechanics and level design DCS built for our casual arcade game are exceptionally polished. Players love the responsiveness.",
-    stars: 5
+    stars: 5,
+    img: "/images/dimitri_avatar.png"
   }
 ];
 
@@ -248,9 +246,9 @@ export default function GameDevPageClient() {
             </p>
 
             <div className="app-dev-hero-bullets anim-3d-reveal delay-300" style={{ width: "100%", justifyContent: "flex-start", marginBottom: "28px" }}>
-              <span>2D & 3D Games</span> <span className="bullet-dot">•</span> 
-              <span>Mobile & PC</span> <span className="bullet-dot">•</span> 
-              <span>Unity Expert</span> <span className="bullet-dot">•</span> 
+              <span>2D & 3D Games</span> <span className="bullet-dot">•</span>
+              <span>Mobile & PC</span> <span className="bullet-dot">•</span>
+              <span>Unity Expert</span> <span className="bullet-dot">•</span>
               <span>Fast Delivery</span>
             </div>
 
@@ -273,16 +271,16 @@ export default function GameDevPageClient() {
 
           {/* Right graphics column - Tilt controller widget */}
           <div className="ai-hero-right anim-3d-reveal delay-300">
-            <div 
+            <div
               ref={(el) => (showRefs.current[0] = el)}
               onMouseMove={(e) => handleMouseMove(e, 99)}
               onMouseLeave={() => handleMouseLeave(99)}
-              className="why-card" 
-              style={{ 
-                padding: "24px", 
-                borderRadius: "30px", 
-                display: "flex", 
-                justifyContent: "center", 
+              className="why-card"
+              style={{
+                padding: "24px",
+                borderRadius: "30px",
+                display: "flex",
+                justifyContent: "center",
                 alignItems: "center",
                 position: "relative",
                 height: "440px",
@@ -290,33 +288,33 @@ export default function GameDevPageClient() {
               }}
             >
               {/* Layered gamepad display mockup */}
-              <div 
-                className="hero-controller-showcase" 
-                style={{ 
-                  width: "100%", 
-                  height: "100%", 
-                  display: "flex", 
-                  justifyContent: "center", 
-                  alignItems: "center", 
-                  position: "relative" 
+              <div
+                className="hero-controller-showcase"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  position: "relative"
                 }}
               >
                 {/* Visual mockup controller svg */}
-                <svg 
-                  width="260" 
-                  height="180" 
-                  viewBox="0 0 260 180" 
-                  fill="none" 
-                  style={{ 
-                    filter: "drop-shadow(0 15px 35px rgba(122,34,255,0.65))", 
-                    animation: "bob-vertical 4s ease-in-out infinite alternate" 
+                <svg
+                  width="260"
+                  height="180"
+                  viewBox="0 0 260 180"
+                  fill="none"
+                  style={{
+                    filter: "drop-shadow(0 15px 35px rgba(122,34,255,0.65))",
+                    animation: "bob-vertical 4s ease-in-out infinite alternate"
                   }}
                 >
                   {/* Outer grips */}
                   <path d="M40 30 C 5 130, 25 170, 75 165 C 100 162, 115 140, 130 140 C 145 140, 160 162, 185 165 C 235 170, 255 130, 220 30 C 205 10, 175 10, 130 25 C 85 10, 55 10, 40 30 Z" fill="#0c0818" stroke="#7a22ff" strokeWidth="6" />
                   {/* Grip Inner Glow */}
                   <path d="M48 38 C 20 120, 35 155, 75 152 C 92 150, 105 132, 130 132 C 155 132, 168 150, 185 152 C 225 155, 240 120, 212 38" stroke="#a855f7" strokeWidth="2.5" strokeLinecap="round" />
-                  
+
                   {/* Analog Sticks (Left and Right) */}
                   <circle cx="95" cy="105" r="28" fill="#1c1236" stroke="#7a22ff" strokeWidth="3.5" />
                   <circle cx="95" cy="105" r="16" fill="#0d071e" stroke="#a855f7" strokeWidth="2" />
@@ -334,7 +332,7 @@ export default function GameDevPageClient() {
                   {/* X Button */}
                   <circle cx="160" cy="62" r="9" fill="#1c1236" stroke="#7a22ff" strokeWidth="2" />
                   <text x="156" y="66" fill="#fff" fontSize="10" fontFamily="var(--font-title)" fontWeight="bold">X</text>
-                  
+
                   {/* Y Button */}
                   <circle cx="178" cy="46" r="9" fill="#1c1236" stroke="#7a22ff" strokeWidth="2" />
                   <text x="175" y="50" fill="#fff" fontSize="10" fontFamily="var(--font-title)" fontWeight="bold">Y</text>
@@ -353,13 +351,13 @@ export default function GameDevPageClient() {
                 </svg>
 
                 {/* Left Floating Stat Widget */}
-                <div 
+                <div
                   className="metric-pill-card anim-bob-slow"
-                  style={{ 
-                    position: "absolute", 
-                    top: "10%", 
-                    left: "-35px", 
-                    zIndex: 10, 
+                  style={{
+                    position: "absolute",
+                    top: "10%",
+                    left: "-35px",
+                    zIndex: 10,
                     background: "rgba(13, 7, 30, 0.8)",
                     border: "1px solid rgba(168, 85, 247, 0.3)",
                     boxShadow: "0 8px 30px rgba(122,34,255,0.25)"
@@ -373,13 +371,13 @@ export default function GameDevPageClient() {
                 </div>
 
                 {/* Right Floating Stat Widget */}
-                <div 
+                <div
                   className="metric-pill-card anim-bob-fast"
-                  style={{ 
-                    position: "absolute", 
-                    bottom: "12%", 
-                    right: "-35px", 
-                    zIndex: 10, 
+                  style={{
+                    position: "absolute",
+                    bottom: "12%",
+                    right: "-35px",
+                    zIndex: 10,
                     background: "rgba(13, 7, 30, 0.8)",
                     border: "1px solid rgba(168, 85, 247, 0.3)",
                     boxShadow: "0 8px 30px rgba(122,34,255,0.25)"
@@ -393,13 +391,13 @@ export default function GameDevPageClient() {
                 </div>
 
                 {/* Center Badge Widget */}
-                <div 
+                <div
                   className="metric-pill-card anim-bob-slow"
-                  style={{ 
-                    position: "absolute", 
-                    bottom: "5%", 
-                    left: "20px", 
-                    zIndex: 10, 
+                  style={{
+                    position: "absolute",
+                    bottom: "5%",
+                    left: "20px",
+                    zIndex: 10,
                     background: "rgba(13, 7, 30, 0.8)",
                     border: "1px solid rgba(168, 85, 247, 0.3)",
                     boxShadow: "0 8px 30px rgba(122,34,255,0.25)",
@@ -407,7 +405,7 @@ export default function GameDevPageClient() {
                   }}
                 >
                   <span style={{ fontSize: "0.75rem", fontWeight: "700", color: "#fff", display: "flex", alignItems: "center", gap: "6px" }}>
-                    <span className="hs-eyebrow-dot" style={{ background: "var(--purple-glow)", boxShadow: "0 0 6px var(--purple-glow)" }} /> 
+                    <span className="hs-eyebrow-dot" style={{ background: "var(--purple-glow)", boxShadow: "0 0 6px var(--purple-glow)" }} />
                     2D & 3D Expertise
                   </span>
                 </div>
@@ -435,7 +433,7 @@ export default function GameDevPageClient() {
         <div className="svc-container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 24px" }}>
           <div className="services-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "24px", marginTop: "40px" }}>
             {SERVICES.map((svc, idx) => (
-              <div 
+              <div
                 key={svc.title}
                 ref={(el) => (cardRefs.current[idx] = el)}
                 onMouseMove={(e) => handleMouseMove(e, idx)}
@@ -454,7 +452,7 @@ export default function GameDevPageClient() {
                 </div>
                 <h4 className="why-card-title" style={{ fontSize: "1.12rem" }}>{svc.title}</h4>
                 <p className="why-card-desc" style={{ fontSize: "0.86rem", minHeight: "68px" }}>{svc.desc}</p>
-                
+
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "auto" }}>
                   {svc.tags.map(t => (
                     <span key={t} style={{ fontSize: "0.72rem", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: "6px", padding: "3px 8px", color: "var(--text-lavender)" }}>
@@ -544,7 +542,7 @@ export default function GameDevPageClient() {
         <div className="svc-container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 24px" }}>
           <div className="why-choose-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "24px" }}>
             {FEATURES.map((feature, idx) => (
-              <div 
+              <div
                 key={feature.title}
                 ref={(el) => (cardRefs.current[idx + 10] = el)}
                 onMouseMove={(e) => handleMouseMove(e, idx + 10)}
@@ -581,20 +579,20 @@ export default function GameDevPageClient() {
         <div className="svc-container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 24px" }}>
           <div className="ai-projects-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px", marginTop: "40px" }}>
             {PROJECTS.map((proj, idx) => (
-              <div 
+              <div
                 key={proj.title}
                 ref={(el) => (cardRefs.current[idx + 20] = el)}
                 onMouseMove={(e) => handleMouseMove(e, idx + 20)}
                 onMouseLeave={() => handleMouseLeave(idx + 20)}
-                className="why-card anim-3d-reveal" 
+                className="why-card anim-3d-reveal"
                 style={{ padding: "0", overflow: "hidden", display: "flex", flexDirection: "column", animationDelay: `${idx * 0.1}s` }}
               >
                 {/* Visual Image Preview */}
                 <div style={{ position: "relative", width: "100%", height: "200px", overflow: "hidden" }}>
-                  <img 
-                    src={proj.img} 
-                    alt={proj.title} 
-                    style={{ width: "100%", height: "100%", objectFit: "cover" }} 
+                  <img
+                    src={proj.img}
+                    alt={proj.title}
+                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   />
                   <div style={{ position: "absolute", top: "12px", left: "12px", background: "rgba(13,7,30,0.8)", border: "1px solid rgba(168,85,247,0.3)", borderRadius: "6px", padding: "4px 10px", fontSize: "0.72rem", color: "var(--purple-glow)", fontFamily: "var(--font-title)", fontWeight: "700" }}>
                     {proj.cat}
@@ -604,7 +602,7 @@ export default function GameDevPageClient() {
                 <div style={{ padding: "24px", display: "flex", flexDirection: "column", flexGrow: 1 }}>
                   <h4 style={{ fontFamily: "var(--font-title)", fontWeight: 700, fontSize: "1.22rem", color: "#fff", marginBottom: "10px" }}>{proj.title}</h4>
                   <p style={{ color: "var(--text-muted)", fontSize: "0.85rem", lineHeight: "1.5", marginBottom: "20px" }}>{proj.desc}</p>
-                  
+
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "20px" }}>
                     {proj.tags.map(t => (
                       <span key={t} style={{ fontSize: "0.68rem", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: "4px", padding: "2px 6px", color: "var(--text-lavender)" }}>
@@ -645,7 +643,11 @@ export default function GameDevPageClient() {
             {TESTIMONIALS.map((t, idx) => (
               <div key={t.name} className="why-card anim-3d-reveal" style={{ animationDelay: `${idx * 0.1}s` }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
-                  <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "#1c1236", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "1.2rem" }}>👤</div>
+                  {t.img ? (
+                    <img src={t.img} alt={t.name} style={{ width: "48px", height: "48px", borderRadius: "50%", objectFit: "cover", background: "#1c1236" }} />
+                  ) : (
+                    <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "#1c1236", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "1.2rem" }}>👤</div>
+                  )}
                   <div>
                     <h4 style={{ color: "#fff", fontSize: "0.98rem", fontWeight: "700", fontFamily: "var(--font-title)" }}>{t.name}</h4>
                     <p style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}>{t.role}</p>
@@ -679,31 +681,31 @@ export default function GameDevPageClient() {
         <div className="svc-container" style={{ maxWidth: "850px", margin: "0 auto", padding: "0 24px" }}>
           <div className="faq-accordions-list anim-3d-reveal delay-200" style={{ display: "flex", flexDirection: "column", gap: "14px", marginTop: "30px" }}>
             {FAQS.map((faq, idx) => (
-              <div 
+              <div
                 key={idx}
                 className={`faq-accordion-item ${activeFaq === idx ? "active" : ""}`}
-                style={{ 
-                  background: "rgba(13, 7, 30, 0.45)", 
-                  border: "1px solid rgba(255,255,255,0.06)", 
-                  borderRadius: "14px", 
-                  overflow: "hidden", 
-                  transition: "all 0.3s ease" 
+                style={{
+                  background: "rgba(13, 7, 30, 0.45)",
+                  border: "1px solid rgba(255,255,255,0.06)",
+                  borderRadius: "14px",
+                  overflow: "hidden",
+                  transition: "all 0.3s ease"
                 }}
               >
                 <button
                   type="button"
                   className="faq-header-btn"
                   onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
-                  style={{ 
-                    width: "100%", 
-                    padding: "20px 24px", 
-                    background: "transparent", 
-                    border: "none", 
-                    display: "flex", 
-                    justifyContent: "space-between", 
-                    alignItems: "center", 
-                    cursor: "pointer", 
-                    textAlign: "left" 
+                  style={{
+                    width: "100%",
+                    padding: "20px 24px",
+                    background: "transparent",
+                    border: "none",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    cursor: "pointer",
+                    textAlign: "left"
                   }}
                 >
                   <span style={{ fontFamily: "var(--font-title)", fontWeight: "600", fontSize: "0.98rem", color: "#fff" }}>
@@ -713,14 +715,14 @@ export default function GameDevPageClient() {
                     +
                   </span>
                 </button>
-                
-                <div 
+
+                <div
                   className="faq-body-content"
-                  style={{ 
-                    maxHeight: activeFaq === idx ? "200px" : "0px", 
-                    overflow: "hidden", 
-                    transition: "max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1)", 
-                    background: "rgba(3,1,8,0.25)" 
+                  style={{
+                    maxHeight: activeFaq === idx ? "200px" : "0px",
+                    overflow: "hidden",
+                    transition: "max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1)",
+                    background: "rgba(3,1,8,0.25)"
                   }}
                 >
                   <p style={{ padding: "0 24px 20px", fontSize: "0.88rem", color: "var(--text-muted)", lineHeight: "1.6" }}>
@@ -754,7 +756,7 @@ export default function GameDevPageClient() {
               <p className="contact-desc anim-3d-reveal delay-200">
                 Let's create a captivating game that engages players, builds communities, and drives long-term success. Complete the project brief and our game architects will reach out within 24 hours.
               </p>
-              
+
               <div className="contact-details">
                 <div className="contact-detail-item anim-3d-reveal delay-300">
                   <div className="contact-detail-icon">

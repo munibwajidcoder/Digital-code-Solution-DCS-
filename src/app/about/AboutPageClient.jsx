@@ -50,21 +50,21 @@ const PROCESS_STEPS = [
 ];
 
 const TECH_ICONS = [
-  { name: "Next.js", slug: "nextdotjs" },
-  { name: "React", slug: "react" },
-  { name: "Tailwind CSS", slug: "tailwindcss" },
-  { name: "JavaScript", slug: "javascript" },
-  { name: "Node.js", slug: "nodedotjs" },
-  { name: "Express.js", slug: "express" },
-  { name: "Firebase", slug: "firebase" },
-  { name: "MongoDB", slug: "mongodb" },
-  { name: "Flutter", slug: "flutter" },
-  { name: "Figma", slug: "figma" },
-  { name: "Photoshop", slug: "adobephotoshop" },
-  { name: "Illustrator", slug: "adobeillustrator" },
-  { name: "OpenAI", slug: "openai" },
-  { name: "Gemini", slug: "google" },
-  { name: "AI Automation", slug: "githubactions" }
+  { name: "Next.js", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" },
+  { name: "React", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+  { name: "Tailwind CSS", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
+  { name: "JavaScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
+  { name: "Node.js", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
+  { name: "Express.js", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" },
+  { name: "Firebase", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" },
+  { name: "MongoDB", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+  { name: "Flutter", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" },
+  { name: "Figma", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
+  { name: "Photoshop", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" },
+  { name: "Illustrator", img: "https://img.icons8.com/color/48/adobe-illustrator--v1.png" },
+  { name: "OpenAI", img: "https://img.icons8.com/color/48/chatgpt.png" },
+  { name: "Gemini", img: "https://cdn.simpleicons.org/googlegemini/8E75B2" },
+  { name: "AI Automation", img: "https://img.icons8.com/color/48/bot.png" }
 ];
 
 const ACHIEVEMENTS = [
@@ -483,35 +483,51 @@ export default function AboutPageClient() {
           </p>
         </div>
 
-        <div className="svc-container" style={{ maxWidth: "1300px", margin: "0 auto", padding: "0 24px", overflowX: "auto" }}>
-          <div className="process-flow-container" style={{ display: "flex", gap: "24px", paddingBottom: "20px", minWidth: "max-content" }}>
-            {PROCESS_STEPS.map((step, idx) => (
+        <style>{`
+          @keyframes processMarquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(calc(-50% - 12px)); }
+          }
+          .process-flow-marquee {
+            display: flex;
+            gap: 24px;
+            padding-bottom: 20px;
+            width: max-content;
+            animation: processMarquee 30s linear infinite;
+          }
+          .process-flow-marquee:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+
+        <div className="svc-container" style={{ maxWidth: "1300px", margin: "0 auto", padding: "0 24px", overflow: "hidden" }}>
+          <div className="process-flow-marquee">
+            {[...PROCESS_STEPS, ...PROCESS_STEPS].map((step, idx) => (
               <div
                 key={idx}
                 className="why-card anim-3d-reveal"
                 style={{
-                  animationDelay: `${idx * 0.08}s`,
+                  animationDelay: `${(idx % PROCESS_STEPS.length) * 0.08}s`,
                   padding: "24px",
                   width: "220px",
                   display: "flex",
                   flexDirection: "column",
                   gap: "12px",
-                  position: "relative"
+                  position: "relative",
+                  flexShrink: 0
                 }}
               >
-                {/* Connector Arrow */}
-                {idx < PROCESS_STEPS.length - 1 && (
-                  <div style={{
-                    position: "absolute",
-                    right: "-20px",
-                    top: "50%",
-                    transform: "translateY(-50%)",
-                    width: "16px",
-                    height: "2px",
-                    background: "rgba(168,85,247,0.3)",
-                    zIndex: 0
-                  }} />
-                )}
+                {/* Connector Arrow always visible for seamless flow */}
+                <div style={{
+                  position: "absolute",
+                  right: "-20px",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  width: "16px",
+                  height: "2px",
+                  background: "rgba(168,85,247,0.3)",
+                  zIndex: 0
+                }} />
 
                 <span style={{ fontSize: "0.85rem", fontWeight: "800", color: "var(--purple-glow)", background: "rgba(168,85,247,0.1)", border: "1px solid rgba(168,85,247,0.2)", borderRadius: "8px", padding: "4px 8px", fontFamily: "var(--font-title)", width: "fit-content" }}>
                   {step.num}
@@ -560,9 +576,9 @@ export default function AboutPageClient() {
                     }}
                   >
                     <img
-                      src={`https://cdn.simpleicons.org/${tech.slug}/white`}
+                      src={tech.img}
                       alt={tech.name}
-                      style={{ width: "24px", height: "24px", marginBottom: "8px", objectFit: "contain" }}
+                      style={{ width: "32px", height: "32px", marginBottom: "8px", objectFit: "contain", filter: tech.name === "Next.js" || tech.name === "Express.js" ? "invert(1)" : "none" }}
                     />
                     <span style={{ fontSize: "0.68rem", color: "#fff", fontWeight: "600", textAlign: "center", display: "block" }}>{tech.name}</span>
                   </div>
@@ -706,24 +722,20 @@ export default function AboutPageClient() {
                 Read how our client partnerships translate directly into technical excellence and commercial success.
               </p>
 
-              <div className="portfolio-testimonial-card why-card anim-3d-reveal" style={{ padding: "32px", display: "flex", flexDirection: "column", gap: "20px" }}>
-                <div style={{ color: "#eab308", fontSize: "1.1rem", display: "flex", gap: "2px" }}>
-                  ★★★★★
-                </div>
-                <p style={{ fontStyle: "italic", color: "var(--text-lavender)", fontSize: "0.95rem", lineHeight: "1.7", margin: 0 }}>
-                  "DCS delivered an exceptional solution that exceeded our expectations. Their team is highly professional, skilled, and committed to our success."
-                </p>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "16px" }}>
-                  <img
-                    src="/images/client_1.png"
-                    alt="TechNova CEO"
-                    style={{ width: "42px", height: "42px", borderRadius: "50%", objectFit: "cover" }}
-                  />
+              <div className="portfolio-testimonial-card why-card anim-3d-reveal" style={{ padding: "32px", display: "flex", flexDirection: "column" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
+                  <img src="/images/dimitri_avatar.png" alt="TechNova CEO" style={{ width: "48px", height: "48px", borderRadius: "50%", objectFit: "cover", background: "#1c1236" }} />
                   <div>
-                    <div style={{ fontSize: "0.9rem", fontWeight: "700", color: "#fff" }}>TechNova Solutions</div>
-                    <div style={{ fontSize: "0.72rem", color: "var(--text-muted)" }}>CEO</div>
+                    <h4 style={{ color: "#fff", fontSize: "0.98rem", fontWeight: "700", fontFamily: "var(--font-title)" }}>TechNova Solutions</h4>
+                    <p style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}>CEO</p>
                   </div>
                 </div>
+                <div style={{ color: "var(--purple-glow)", fontSize: "0.9rem", marginBottom: "8px" }}>
+                  ★★★★★
+                </div>
+                <p className="why-card-desc" style={{ fontSize: "0.88rem", fontStyle: "italic", lineHeight: "1.6" }}>
+                  "DCS delivered an exceptional solution that exceeded our expectations. Their team is highly professional, skilled, and committed to our success."
+                </p>
               </div>
             </div>
 

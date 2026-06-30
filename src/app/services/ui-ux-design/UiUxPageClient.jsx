@@ -5,20 +5,20 @@ import ResponsiveNav from "../../../components/ResponsiveNav";
 import GlobalScrollObserver from "../../../components/GlobalScrollObserver";
 
 const TOOLS = [
-  { name: "Figma", cat: "Design Tools", img: "https://cdn.simpleicons.org/figma/white" },
-  { name: "Adobe XD", cat: "Design Tools", img: "https://cdn.simpleicons.org/adobexd/white" },
-  { name: "Sketch", cat: "Design Tools", img: "https://cdn.simpleicons.org/sketch/white" },
-  { name: "Hotjar", cat: "Research Tools", img: "https://cdn.simpleicons.org/hotjar/white" },
-  { name: "Maze", cat: "Research Tools", img: "https://cdn.simpleicons.org/maze/white" },
-  { name: "Google Analytics", cat: "Research Tools", img: "https://cdn.simpleicons.org/googleanalytics/white" },
-  { name: "Figma Prototype", cat: "Prototyping", img: "https://cdn.simpleicons.org/figma/white" },
-  { name: "Framer", cat: "Prototyping", img: "https://cdn.simpleicons.org/framer/white" },
-  { name: "Principle", cat: "Prototyping", img: "https://cdn.simpleicons.org/googlecloud/white" }, // Replaced with simple placeholder/icon
-  { name: "Notion", cat: "Collaboration", img: "https://cdn.simpleicons.org/notion/white" },
-  { name: "Jira", cat: "Collaboration", img: "https://cdn.simpleicons.org/jira/white" },
-  { name: "Slack", cat: "Collaboration", img: "https://cdn.simpleicons.org/slack/white" },
-  { name: "Figma Dev Mode", cat: "Developer Handoff", img: "https://cdn.simpleicons.org/figma/white" },
-  { name: "Zeplin", cat: "Developer Handoff", img: "https://cdn.simpleicons.org/zeplin/white" }
+  { name: "Figma", cat: "Design Tools", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
+  { name: "Adobe XD", cat: "Design Tools", img: "https://img.icons8.com/color/48/adobe-xd.png" },
+  { name: "Sketch", cat: "Design Tools", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sketch/sketch-original.svg" },
+  { name: "Hotjar", cat: "Research Tools", img: "https://cdn.simpleicons.org/hotjar/FD3A5C" },
+  { name: "Maze", cat: "Research Tools", img: "https://cdn.simpleicons.org/maze/55FF99" },
+  { name: "Google Analytics", cat: "Research Tools", img: "https://img.icons8.com/color/48/google-analytics.png" },
+  { name: "Figma Prototype", cat: "Prototyping", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
+  { name: "Framer", cat: "Prototyping", img: "https://cdn.simpleicons.org/framer/0055FF" },
+  { name: "Principle", cat: "Prototyping", img: "https://img.icons8.com/color/48/concept.png" },
+  { name: "Notion", cat: "Collaboration", img: "https://img.icons8.com/color/48/notion--v1.png" },
+  { name: "Jira", cat: "Collaboration", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" },
+  { name: "Slack", cat: "Collaboration", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg" },
+  { name: "Figma Dev Mode", cat: "Developer Handoff", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
+  { name: "Zeplin", cat: "Developer Handoff", img: "https://img.icons8.com/color/48/airship.png" }
 ];
 
 const SERVICES = [
@@ -37,11 +37,7 @@ const SERVICES = [
     desc: "Professional dashboards with highly refined information architecture, data visualizations, and optimized workflows for complex tasks.",
     tags: ["SaaS Dashboards", "Charts & Graphs", "UX Flow"]
   },
-  {
-    title: "UX Research",
-    desc: "User-centered research methods including user testing, interviews, persona mapping, and usability audits to align products with real needs.",
-    tags: ["User Testing", "Usability Audit", "Personas"]
-  },
+
   {
     title: "Wireframing",
     desc: "Structured blueprints and low-fidelity layouts mapping information hierarchies and user paths before entering visual creation phases.",
@@ -83,7 +79,6 @@ const BENEFITS = [
   { title: "Design Consistency", desc: "Scalable styling tokens and components keeping layouts uniform across complex product versions." },
   { title: "Faster Development", desc: "Figma files structured using components and variables that translate directly into clean frontend code." },
   { title: "Improved Accessibility", desc: "Designs matching WCAG standards to ensure your application remains accessible to all demographics." },
-  { title: "Scalable Solutions", desc: "Design systems that easily adapt as you add new modules, portals, and features." },
   { title: "Business Growth", desc: "Turn visual assets into valuable revenue pipelines by converting visitors into active customers." }
 ];
 
@@ -131,19 +126,22 @@ const TESTIMONIALS = [
     name: "Marcus Aurelius",
     role: "CEO, Stoic Tech Labs",
     text: "The UI/UX design DCS built completely transformed our product. User engagement rose by 40% in just two weeks, and developers loved the detailed handoff guides. Figma files were incredibly organized!",
-    stars: 5
+    stars: 5,
+    img: "/images/marcus_ui_avatar.png"
   },
   {
     name: "Clarissa Finch",
     role: "VP of Product, FinVantage",
     text: "Outstanding UX research and design execution. They redesigned our fintech mobile wallet, and the conversion rates instantly jumped. The clickable prototype was perfect for our board presentations.",
-    stars: 5
+    stars: 5,
+    img: "/images/clarissa_ui_avatar.png"
   },
   {
     name: "Kenji Sato",
     role: "Founder, SaaSFlow Systems",
     text: "Our legacy platform looked cluttered and confusing. DCS modernized it with a clean, purple-accented style system that our customers love. Highly professional design standards!",
-    stars: 5
+    stars: 5,
+    img: "/images/kenji_ui_avatar.png"
   }
 ];
 
@@ -584,12 +582,27 @@ export default function UiUxPageClient() {
         </div>
 
         <div className="svc-container" style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 24px" }}>
-          <div className="svc-tech-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(130px, 1fr))", gap: "20px", marginTop: "40px" }}>
+          <div className="svc-tech-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(120px, 1fr))", gap: "16px", marginTop: "32px" }}>
             {TOOLS.map((tool, idx) => (
-              <div key={`${tool.name}-${idx}`} className="svc-tech-box anim-3d-reveal" style={{ animationDelay: `${idx * 0.03}s`, padding: "16px 12px" }}>
-                <img src={tool.img} alt={tool.name} style={{ width: "32px", height: "32px", marginBottom: "8px", objectFit: "contain" }} />
-                <span style={{ fontSize: "0.8rem", color: "#fff", fontWeight: "600", textAlign: "center" }}>{tool.name}</span>
-                <span style={{ fontSize: "0.58rem", color: "var(--text-muted)", marginTop: "2px" }}>{tool.cat}</span>
+              <div 
+                key={`${tool.name}-${idx}`} 
+                className="svc-tech-box anim-3d-reveal" 
+                style={{ 
+                  animationDelay: `${idx * 0.03}s`, 
+                  padding: "16px 12px",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  background: "var(--glass-bg, rgba(255,255,255,0.02))",
+                  border: "1px solid var(--glass-border, rgba(255,255,255,0.05))",
+                  borderRadius: "14px",
+                  textAlign: "center"
+                }}
+              >
+                <img src={tool.img} alt={tool.name} style={{ width: "36px", height: "36px", marginBottom: "8px", objectFit: "contain", filter: "drop-shadow(0px 4px 8px rgba(0,0,0,0.3))" }} />
+                <span style={{ fontSize: "0.85rem", color: "#fff", fontWeight: "700", fontFamily: "var(--font-title)", lineHeight: "1.2" }}>{tool.name}</span>
+                <span style={{ fontSize: "0.65rem", color: "var(--text-muted)", marginTop: "4px", textTransform: "uppercase", letterSpacing: "0.05em" }}>{tool.cat}</span>
               </div>
             ))}
           </div>
@@ -719,7 +732,11 @@ export default function UiUxPageClient() {
             {TESTIMONIALS.map((t, idx) => (
               <div key={t.name} className="why-card anim-3d-reveal" style={{ animationDelay: `${idx * 0.1}s` }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
-                  <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "#1c1236", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "1.2rem", border: "1px solid rgba(168,85,247,0.3)" }}>👤</div>
+                  {t.img ? (
+                    <img src={t.img} alt={t.name} style={{ width: "48px", height: "48px", borderRadius: "50%", objectFit: "cover", background: "#1c1236" }} />
+                  ) : (
+                    <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "#1c1236", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "1.2rem", border: "1px solid rgba(168,85,247,0.3)" }}>👤</div>
+                  )}
                   <div>
                     <h4 style={{ color: "#fff", fontSize: "0.98rem", fontWeight: "700", fontFamily: "var(--font-title)" }}>{t.name}</h4>
                     <p style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}>{t.role}</p>

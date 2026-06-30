@@ -550,18 +550,7 @@ export default function AiChatbotPageClient() {
               <p className="why-card-desc">Deploy LLM-trained networks that adapt answers dynamically matching database contexts.</p>
             </div>
 
-            {/* Benefit 6: Multilingual Support */}
-            <div className="why-card anim-3d-reveal delay-600">
-              <div className="why-icon-wrap">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: "#a855f7" }}>
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="2" y1="12" x2="22" y2="12"></line>
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                </svg>
-              </div>
-              <h4 className="why-card-title">Multilingual Support</h4>
-              <p className="why-card-desc">Engage and support your global customers with automated real-time translation in 100+ languages.</p>
-            </div>
+
 
             {/* Benefit 7 */}
             <div className="why-card anim-3d-reveal delay-100">
@@ -937,7 +926,9 @@ export default function AiChatbotPageClient() {
             {/* Testimonial 1 */}
             <div className="why-card anim-3d-reveal delay-100">
               <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
-                <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "#1c1236", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "1.2rem" }}>👤</div>
+                <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "#1c1236", display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" }}>
+                  <img src="/images/sarah_avatar.png" alt="Sarah Jenkins" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                </div>
                 <div>
                   <h4 style={{ color: "#fff", fontSize: "0.98rem", fontWeight: "700", fontFamily: "var(--font-title)" }}>Sarah Jenkins</h4>
                   <p style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}>COO, GrowthTech Labs</p>
@@ -952,7 +943,9 @@ export default function AiChatbotPageClient() {
             {/* Testimonial 2 */}
             <div className="why-card anim-3d-reveal delay-200">
               <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
-                <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "#1c1236", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "1.2rem" }}>👤</div>
+                <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "#1c1236", display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" }}>
+                  <img src="/images/marcus_avatar.png" alt="Marcus Chen" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                </div>
                 <div>
                   <h4 style={{ color: "#fff", fontSize: "0.98rem", fontWeight: "700", fontFamily: "var(--font-title)" }}>Marcus Chen</h4>
                   <p style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}>VP Sales, RealEstate Direct</p>
@@ -967,7 +960,9 @@ export default function AiChatbotPageClient() {
             {/* Testimonial 3 */}
             <div className="why-card anim-3d-reveal delay-300">
               <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
-                <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "#1c1236", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "1.2rem" }}>👤</div>
+                <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "#1c1236", display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" }}>
+                  <img src="/images/evelyn_avatar.png" alt="Evelyn Thorne" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                </div>
                 <div>
                   <h4 style={{ color: "#fff", fontSize: "0.98rem", fontWeight: "700", fontFamily: "var(--font-title)" }}>Evelyn Thorne</h4>
                   <p style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}>Founder, StyleSaaS</p>

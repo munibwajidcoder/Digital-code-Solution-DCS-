@@ -5,18 +5,18 @@ import ResponsiveNav from "../../../components/ResponsiveNav";
 import GlobalScrollObserver from "../../../components/GlobalScrollObserver";
 
 const TOOLS = [
-  { name: "Photoshop", cat: "Design", img: "https://cdn.simpleicons.org/adobephotoshop/white" },
-  { name: "Illustrator", cat: "Design", img: "https://cdn.simpleicons.org/adobeillustrator/white" },
-  { name: "InDesign", cat: "Design", img: "https://cdn.simpleicons.org/adobeindesign/white" },
-  { name: "Figma", cat: "Design", img: "https://cdn.simpleicons.org/figma/white" },
-  { name: "Creative Cloud", cat: "Branding", img: "https://cdn.simpleicons.org/adobecreativecloud/white" },
-  { name: "Notion", cat: "Branding", img: "https://cdn.simpleicons.org/notion/white" },
-  { name: "Slack", cat: "Branding", img: "https://cdn.simpleicons.org/slack/white" },
-  { name: "PowerPoint", cat: "Presentation", img: "https://cdn.simpleicons.org/microsoftpowerpoint/white" },
-  { name: "Google Slides", cat: "Presentation", img: "https://cdn.simpleicons.org/googledrive/white" },
-  { name: "Canva Pro", cat: "Presentation", img: "https://cdn.simpleicons.org/canva/white" },
-  { name: "Figma", cat: "Mockups", img: "https://cdn.simpleicons.org/figma/white" },
-  { name: "Adobe XD", cat: "Mockups", img: "https://cdn.simpleicons.org/adobexd/white" }
+  { name: "Photoshop", cat: "Design", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" },
+  { name: "Illustrator", cat: "Design", img: "https://img.icons8.com/color/48/adobe-illustrator--v1.png" },
+  { name: "InDesign", cat: "Design", img: "https://img.icons8.com/color/48/adobe-indesign--v1.png" },
+  { name: "Figma", cat: "Design", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
+  { name: "Creative Cloud", cat: "Branding", img: "https://img.icons8.com/color/48/adobe-creative-cloud--v1.png" },
+  { name: "Notion", cat: "Branding", img: "https://img.icons8.com/color/48/notion--v1.png" },
+  { name: "Slack", cat: "Branding", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg" },
+  { name: "PowerPoint", cat: "Presentation", img: "https://img.icons8.com/color/48/microsoft-powerpoint-2019.png" },
+  { name: "Google Slides", cat: "Presentation", img: "https://img.icons8.com/color/48/google-slides.png" },
+  { name: "Canva Pro", cat: "Presentation", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" },
+  { name: "Figma", cat: "Mockups", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
+  { name: "Adobe XD", cat: "Mockups", img: "https://img.icons8.com/color/48/adobe-xd.png" }
 ];
 
 const SERVICES = [
@@ -27,7 +27,6 @@ const SERVICES = [
   { title: "Business Profile Design", desc: "Professional corporate profiles, whitepapers, and annual reports that build investor and client trust.", tags: ["Corporate", "B2B", "Reports"] },
   { title: "Packaging Design", desc: "Striking product packaging concepts that stand out on shelves and create delightful unboxing experiences.", tags: ["Labels", "Boxes", "Products"] },
   { title: "Print Design", desc: "Print-ready creatives optimized for high-resolution physical production across various mediums.", tags: ["CMYK", "Bleeds", "High-Res"] },
-  { title: "Presentation Design", desc: "Persuasive and beautifully crafted pitch decks and presentations that captivate investors.", tags: ["Pitch Decks", "Slides", "Keynote"] },
   { title: "Advertising Creatives", desc: "Conversion-focused ad creatives for Google, Facebook, and native ad networks.", tags: ["Display Ads", "Social Ads", "Banners"] },
   { title: "Rebranding Services", desc: "Modernize and refresh outdated visual identities to align with new business goals and modern trends.", tags: ["Brand Refresh", "Modernization", "Evolution"] }
 ];
@@ -41,7 +40,6 @@ const BENEFITS = [
   { title: "Consistent Visual Branding", desc: "Maintain a cohesive look and feel that strengthens brand recall and loyalty." },
   { title: "Improved Marketing Performance", desc: "Better creatives lead directly to higher click-through and conversion rates." },
   { title: "Memorable Customer Experience", desc: "Create positive emotional connections through stunning aesthetic interactions." },
-  { title: "Competitive Market Positioning", desc: "Position your brand as an industry leader through superior visual presentation." },
   { title: "Long-Term Business Growth", desc: "Invest in design that builds a lasting foundation for scaling your business." }
 ];
 
@@ -64,9 +62,9 @@ const PROJECTS = [
 ];
 
 const TESTIMONIALS = [
-  { name: "Elena Rostova", role: "CMO, NovaStyle", text: "DCS completely transformed our brand. The new visual identity is absolutely stunning, and our marketing materials finally reflect the premium quality of our products.", stars: 5 },
-  { name: "David Chen", role: "Founder, TechLaunch", text: "Their graphic design team is incredible. They nailed our SaaS startup branding on the first concept. The pitch deck they designed helped us secure our seed funding.", stars: 5 },
-  { name: "Sarah Jenkins", role: "Owner, The Daily Grind", text: "The restaurant branding package was exactly what we needed. From menus to social media templates, everything is cohesive, modern, and visually striking.", stars: 5 }
+  { name: "Elena Rostova", role: "CMO, NovaStyle", text: "DCS completely transformed our brand. The new visual identity is absolutely stunning, and our marketing materials finally reflect the premium quality of our products.", stars: 5, img: "/images/elena_avatar.png" },
+  { name: "David Chen", role: "Founder, TechLaunch", text: "Their graphic design team is incredible. They nailed our SaaS startup branding on the first concept. The pitch deck they designed helped us secure our seed funding.", stars: 5, img: "/images/david_avatar.png" },
+  { name: "Sarah Jenkins", role: "Owner, The Daily Grind", text: "The restaurant branding package was exactly what we needed. From menus to social media templates, everything is cohesive, modern, and visually striking.", stars: 5, img: "/images/sarah_avatar.png" }
 ];
 
 const FAQS = [
@@ -506,12 +504,27 @@ export default function GraphicDesignPageClient() {
         </div>
 
         <div className="svc-container" style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 24px" }}>
-          <div className="svc-tech-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(130px, 1fr))", gap: "20px", marginTop: "40px" }}>
+          <div className="svc-tech-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(120px, 1fr))", gap: "16px", marginTop: "32px" }}>
             {TOOLS.map((tool, idx) => (
-              <div key={`${tool.name}-${idx}`} className="svc-tech-box anim-3d-reveal" style={{ animationDelay: `${idx * 0.03}s`, padding: "16px 12px" }}>
-                <img src={tool.img} alt={tool.name} style={{ width: "32px", height: "32px", marginBottom: "8px", objectFit: "contain" }} />
-                <span style={{ fontSize: "0.8rem", color: "#fff", fontWeight: "600", textAlign: "center" }}>{tool.name}</span>
-                <span style={{ fontSize: "0.58rem", color: "var(--text-muted)", marginTop: "2px" }}>{tool.cat}</span>
+              <div 
+                key={`${tool.name}-${idx}`} 
+                className="svc-tech-box anim-3d-reveal" 
+                style={{ 
+                  animationDelay: `${idx * 0.03}s`, 
+                  padding: "16px 12px",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  background: "var(--glass-bg, rgba(255,255,255,0.02))",
+                  border: "1px solid var(--glass-border, rgba(255,255,255,0.05))",
+                  borderRadius: "14px",
+                  textAlign: "center"
+                }}
+              >
+                <img src={tool.img} alt={tool.name} style={{ width: "36px", height: "36px", marginBottom: "8px", objectFit: "contain", filter: "drop-shadow(0px 4px 8px rgba(0,0,0,0.3))" }} />
+                <span style={{ fontSize: "0.85rem", color: "#fff", fontWeight: "700", fontFamily: "var(--font-title)", lineHeight: "1.2" }}>{tool.name}</span>
+                <span style={{ fontSize: "0.65rem", color: "var(--text-muted)", marginTop: "4px", textTransform: "uppercase", letterSpacing: "0.05em" }}>{tool.cat}</span>
               </div>
             ))}
           </div>
@@ -641,7 +654,11 @@ export default function GraphicDesignPageClient() {
             {TESTIMONIALS.map((t, idx) => (
               <div key={t.name} className="why-card anim-3d-reveal" style={{ animationDelay: `${idx * 0.1}s` }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
-                  <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "#1c1236", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "1.2rem", border: "1px solid rgba(168,85,247,0.3)" }}>👤</div>
+                  {t.img ? (
+                    <img src={t.img} alt={t.name} style={{ width: "48px", height: "48px", borderRadius: "50%", objectFit: "cover", background: "#1c1236" }} />
+                  ) : (
+                    <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "#1c1236", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "1.2rem", border: "1px solid rgba(168,85,247,0.3)" }}>👤</div>
+                  )}
                   <div>
                     <h4 style={{ color: "#fff", fontSize: "0.98rem", fontWeight: "700", fontFamily: "var(--font-title)" }}>{t.name}</h4>
                     <p style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}>{t.role}</p>

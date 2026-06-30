@@ -1,4 +1,13 @@
 
+const REVIEWS = [
+  { name: "Michael Sterling", role: "CEO, TechVentures LLC", text: "DCS transformed our entire digital presence. Their team delivered a stunning, high-performance web application that exceeded every expectation. Truly world-class work.", img: "/images/alex_avatar.png", stars: 5 },
+  { name: "Sarah Mitchell", role: "Founder, HealthFirst App", text: "The mobile app they built for us increased our user engagement by 300%. Professional, on-time delivery, and outstanding UI/UX design. Highly recommend!", img: "/images/sarah_avatar.png", stars: 5 },
+  { name: "James Carter", role: "Director, ShopWave", text: "From branding to full-stack development, DCS handled everything seamlessly. Our e-commerce platform now generates 5x more revenue. Best investment we've made.", img: "/images/james_avatar.png", stars: 5 },
+  { name: "Emma Watson", role: "CTO, DataFlow Solutions", text: "Incredible attention to detail and a team that truly listens. They delivered our SaaS dashboard ahead of schedule and it's visually breathtaking. 10/10 experience.", img: "/images/elena_avatar.png", stars: 5 },
+  { name: "David Harrison", role: "Product Lead, InnovateTech", text: "DCS is the only agency we trust for our digital projects. Their expertise in AI integration and modern design is unmatched. They made the impossible possible.", img: "/images/david_avatar.png", stars: 5 },
+  { name: "Sophia Anderson", role: "CMO, BrandCraft Agency", text: "Their graphic design team created a brand identity that perfectly captures our vision. The entire process was smooth, collaborative, and delivered exceptional results.", img: "/images/riana_avatar.png", stars: 5 }
+];
+
 export default function TestimonialsSection() {
   return (
     <section className="testi-section">
@@ -22,78 +31,23 @@ export default function TestimonialsSection() {
           </div>
 
           <div className="testi-grid">
-            {/* Review 1 */}
-            <div className="testi-card anim-fade-up delay-100">
-              <div className="testi-stars">★★★★★</div>
-              <p className="testi-text">"DCS transformed our entire digital presence. Their team delivered a stunning, high-performance web application that exceeded every expectation. Truly world-class work."</p>
-              <div className="testi-author">
-                <img src="/images/client_1.png" alt="Michael Sterling" className="testi-avatar" style={{objectFit: 'cover'}} />
-                <div className="testi-author-info">
-                  <span className="testi-author-name">Michael Sterling</span>
-                  <span className="testi-author-role">CEO, TechVentures LLC</span>
+            {REVIEWS.map((t, idx) => (
+              <div key={t.name} className={`why-card anim-fade-up delay-${(idx % 3 + 1) * 100}`}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
+                  <img src={t.img} alt={t.name} style={{ width: "48px", height: "48px", borderRadius: "50%", objectFit: "cover", background: "#1c1236" }} />
+                  <div>
+                    <h4 style={{ color: "#fff", fontSize: "0.98rem", fontWeight: "700", fontFamily: "var(--font-title)", margin: 0 }}>{t.name}</h4>
+                    <p style={{ color: "var(--text-muted)", fontSize: "0.8rem", margin: 0 }}>{t.role}</p>
+                  </div>
                 </div>
-              </div>
-            </div>
-            {/* Review 2 */}
-            <div className="testi-card anim-fade-up delay-200">
-              <div className="testi-stars">★★★★★</div>
-              <p className="testi-text">"The mobile app they built for us increased our user engagement by 300%. Professional, on-time delivery, and outstanding UI/UX design. Highly recommend!"</p>
-              <div className="testi-author">
-                <img src="/images/client_2.png" alt="Sarah Mitchell" className="testi-avatar" style={{objectFit: 'cover'}} />
-                <div className="testi-author-info">
-                  <span className="testi-author-name">Sarah Mitchell</span>
-                  <span className="testi-author-role">Founder, HealthFirst App</span>
+                <div style={{ color: "var(--purple-glow)", fontSize: "0.9rem", marginBottom: "8px" }}>
+                  {"★".repeat(t.stars)}
                 </div>
+                <p className="why-card-desc" style={{ fontSize: "0.88rem", fontStyle: "italic", lineHeight: "1.6" }}>
+                  "{t.text}"
+                </p>
               </div>
-            </div>
-            {/* Review 3 */}
-            <div className="testi-card anim-fade-up delay-300">
-              <div className="testi-stars">★★★★★</div>
-              <p className="testi-text">"From branding to full-stack development, DCS handled everything seamlessly. Our e-commerce platform now generates 5x more revenue. Best investment we've made."</p>
-              <div className="testi-author">
-                <img src="/images/client_3.png" alt="James Carter" className="testi-avatar" style={{objectFit: 'cover'}} />
-                <div className="testi-author-info">
-                  <span className="testi-author-name">James Carter</span>
-                  <span className="testi-author-role">Director, ShopWave</span>
-                </div>
-              </div>
-            </div>
-            {/* Review 4 */}
-            <div className="testi-card anim-fade-up delay-100">
-              <div className="testi-stars">★★★★★</div>
-              <p className="testi-text">"Incredible attention to detail and a team that truly listens. They delivered our SaaS dashboard ahead of schedule and it's visually breathtaking. 10/10 experience."</p>
-              <div className="testi-author">
-                <img src="/images/client_4.png" alt="Emma Watson" className="testi-avatar" style={{objectFit: 'cover'}} />
-                <div className="testi-author-info">
-                  <span className="testi-author-name">Emma Watson</span>
-                  <span className="testi-author-role">CTO, DataFlow Solutions</span>
-                </div>
-              </div>
-            </div>
-            {/* Review 5 */}
-            <div className="testi-card anim-fade-up delay-200">
-              <div className="testi-stars">★★★★★</div>
-              <p className="testi-text">"DCS is the only agency we trust for our digital projects. Their expertise in AI integration and modern design is unmatched. They made the impossible possible."</p>
-              <div className="testi-author">
-                <img src="/images/client_5.png" alt="David Harrison" className="testi-avatar" style={{objectFit: 'cover'}} />
-                <div className="testi-author-info">
-                  <span className="testi-author-name">David Harrison</span>
-                  <span className="testi-author-role">Product Lead, InnovateTech</span>
-                </div>
-              </div>
-            </div>
-            {/* Review 6 */}
-            <div className="testi-card anim-fade-up delay-300">
-              <div className="testi-stars">★★★★★</div>
-              <p className="testi-text">"Their graphic design team created a brand identity that perfectly captures our vision. The entire process was smooth, collaborative, and delivered exceptional results."</p>
-              <div className="testi-author">
-                <img src="/images/client_6.png" alt="Sophia Anderson" className="testi-avatar" style={{objectFit: 'cover'}} />
-                <div className="testi-author-info">
-                  <span className="testi-author-name">Sophia Anderson</span>
-                  <span className="testi-author-role">CMO, BrandCraft Agency</span>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

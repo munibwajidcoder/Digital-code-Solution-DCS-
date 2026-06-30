@@ -103,18 +103,18 @@ const PROJECTS = [
 ];
 
 const TECH_ICONS = [
-  { name: "Next.js", slug: "nextdotjs" },
-  { name: "React", slug: "react" },
-  { name: "Node.js", slug: "nodedotjs" },
-  { name: "Flutter", slug: "flutter" },
-  { name: "MongoDB", slug: "mongodb" },
-  { name: "Firebase", slug: "firebase" },
-  { name: "AWS", slug: "amazonwebservices" },
-  { name: "Tailwind", slug: "tailwindcss" },
-  { name: "Figma", slug: "figma" },
-  { name: "OpenAI", slug: "openai" },
-  { name: "Python", slug: "python" },
-  { name: "Docker", slug: "docker" }
+  { name: "Next.js", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" },
+  { name: "React", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+  { name: "Node.js", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
+  { name: "Flutter", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" },
+  { name: "MongoDB", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+  { name: "Firebase", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" },
+  { name: "AWS", img: "https://img.icons8.com/color/48/amazon-web-services.png" },
+  { name: "Tailwind", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
+  { name: "Figma", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
+  { name: "OpenAI", img: "https://img.icons8.com/color/48/chatgpt.png" },
+  { name: "Python", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+  { name: "Docker", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" }
 ];
 
 const PROCESS_STEPS = [
@@ -461,9 +461,9 @@ export default function PortfolioPageClient() {
                     }}
                   >
                     <img
-                      src={`https://cdn.simpleicons.org/${tech.slug}/white`}
+                      src={tech.img}
                       alt={tech.name}
-                      style={{ width: "26px", height: "26px", marginBottom: "8px", objectFit: "contain" }}
+                      style={{ width: "32px", height: "32px", marginBottom: "8px", objectFit: "contain", filter: tech.name === "Next.js" ? "invert(1)" : "none" }}
                     />
                     <span style={{ fontSize: "0.75rem", color: "#fff", fontWeight: "600" }}>{tech.name}</span>
                   </div>
@@ -529,26 +529,42 @@ export default function PortfolioPageClient() {
       </section>
 
       {/* ── 4. STATS STRIP BANNER ── */}
-      <section className="stats-strip-bar" aria-label="Achievements stats" style={{ borderTop: "1px solid rgba(255,255,255,0.05)", borderBottom: "1px solid rgba(255,255,255,0.05)", background: "rgba(3,1,8,0.2)" }}>
-        <div className="svc-container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "20px 24px" }}>
-          <div className="svc-stats-bar" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "24px" }}>
-            <div className="svc-stat-item">
-              <span className="svc-stat-num">100+</span>
-              <span className="svc-stat-lbl">Projects Delivered</span>
+      <section className="stats-strip-bar" aria-label="Achievements stats" style={{ borderTop: "1px solid rgba(255,255,255,0.05)", borderBottom: "1px solid rgba(255,255,255,0.05)", background: "rgba(3,1,8,0.2)", overflow: "hidden", whiteSpace: "nowrap" }}>
+        <style>{`
+          @keyframes statsMarquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+          }
+          .stats-marquee-container {
+            display: flex;
+            width: max-content;
+            animation: statsMarquee 20s linear infinite;
+          }
+          .stats-marquee-container:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+        <div className="stats-marquee-container" style={{ padding: "20px 0" }}>
+          {[...Array(4)].map((_, i) => (
+            <div key={i} style={{ display: "flex", gap: "60px", paddingRight: "60px", alignItems: "center" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                <span style={{ fontSize: "1.4rem", fontWeight: "800", color: "#fff", fontFamily: "var(--font-title)" }}>100+</span>
+                <span style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.05em", fontWeight: "600" }}>Projects Delivered</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                <span style={{ fontSize: "1.4rem", fontWeight: "800", color: "#fff", fontFamily: "var(--font-title)" }}>98%</span>
+                <span style={{ fontSize: "0.75rem", color: "var(--text-lavender)", textTransform: "uppercase", letterSpacing: "0.05em", fontWeight: "600" }}>Client Satisfaction</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                <span style={{ fontSize: "1.4rem", fontWeight: "800", color: "#fff", fontFamily: "var(--font-title)" }}>50+</span>
+                <span style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.05em", fontWeight: "600" }}>Happy Clients</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                <span style={{ fontSize: "1.4rem", fontWeight: "800", color: "#fff", fontFamily: "var(--font-title)" }}>5+ Years</span>
+                <span style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.05em", fontWeight: "600" }}>Years Experience</span>
+              </div>
             </div>
-            <div className="svc-stat-item">
-              <span className="svc-stat-num">98%</span>
-              <span className="svc-stat-lbl">Client Satisfaction</span>
-            </div>
-            <div className="svc-stat-item">
-              <span className="svc-stat-num">50+</span>
-              <span className="svc-stat-lbl">Happy Clients</span>
-            </div>
-            <div className="svc-stat-item">
-              <span className="svc-stat-num">5+ Years</span>
-              <span className="svc-stat-lbl">Years Experience</span>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
@@ -569,24 +585,20 @@ export default function PortfolioPageClient() {
                 We build long-term relationships through technical expertise and smooth communication.
               </p>
 
-              <div className="portfolio-testimonial-card why-card anim-3d-reveal" style={{ padding: "32px", display: "flex", flexDirection: "column", gap: "20px" }}>
-                <div style={{ color: "#eab308", fontSize: "1.1rem", display: "flex", gap: "2px" }}>
-                  ★★★★★
-                </div>
-                <p style={{ fontStyle: "italic", color: "var(--text-lavender)", fontSize: "0.95rem", lineHeight: "1.7", margin: 0 }}>
-                  "Digital Code Solution delivered an exceptional product that exceeded our expectations. Their professionalism, communication, and technical skills are outstanding."
-                </p>
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "16px" }}>
-                  <img
-                    src="/images/avatar1.png"
-                    alt="James Anderson"
-                    style={{ width: "42px", height: "42px", borderRadius: "50%", objectFit: "cover" }}
-                  />
+              <div className="portfolio-testimonial-card why-card anim-3d-reveal" style={{ padding: "32px", display: "flex", flexDirection: "column" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
+                  <img src="/images/james_avatar.png" alt="James Anderson" style={{ width: "48px", height: "48px", borderRadius: "50%", objectFit: "cover", background: "#1c1236" }} />
                   <div>
-                    <div style={{ fontSize: "0.9rem", fontWeight: "700", color: "#fff" }}>James Anderson</div>
-                    <div style={{ fontSize: "0.72rem", color: "var(--text-muted)" }}>CEO, Fintech Solutions</div>
+                    <h4 style={{ color: "#fff", fontSize: "0.98rem", fontWeight: "700", fontFamily: "var(--font-title)" }}>James Anderson</h4>
+                    <p style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}>CEO, Fintech Solutions</p>
                   </div>
                 </div>
+                <div style={{ color: "var(--purple-glow)", fontSize: "0.9rem", marginBottom: "8px" }}>
+                  ★★★★★
+                </div>
+                <p className="why-card-desc" style={{ fontSize: "0.88rem", fontStyle: "italic", lineHeight: "1.6" }}>
+                  "Digital Code Solution delivered an exceptional product that exceeded our expectations. Their professionalism, communication, and technical skills are outstanding."
+                </p>
               </div>
             </div>
 
